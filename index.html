@@ -1,152 +1,255 @@
-<!-- =========================
-SHIVANSH CYBER CAFE SERVICES SECTION
-========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivansh Cyber Cafe</title>
 
-<section
-    <section class="hero">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(15,23,42,0.8);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:18px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+/* HERO SECTION */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px 50px;
+    background:
+    linear-gradient(rgba(15,23,42,.85),
+    rgba(15,23,42,.85)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:65px;
+    font-weight:800;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero p{
+    font-size:20px;
+    color:#d1d5db;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:linear-gradient(135deg,#2563eb,#38bdf8);
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-5px);
+}
+
+.btn-secondary{
+    border:2px solid #38bdf8;
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:#38bdf8;
+    color:#0f172a;
+}
+
+.stats{
+    margin-top:60px;
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    background:rgba(255,255,255,0.08);
+    padding:20px 30px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+}
+
+.stat-box h2{
+    color:#38bdf8;
+    font-size:30px;
+}
+
+.stat-box p{
+    margin-top:5px;
+    font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.nav-links{
+    display:none;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.stats{
+    gap:15px;
+}
+
+.stat-box{
+    width:100%;
+}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">Shivansh Cyber Cafe</div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Reviews</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+
     <div class="hero-content">
-        <h1>SHIVANSH CYBER CAFE</h1>
+
+        <h1>
+            Welcome To <br>
+            <span>Shivansh Cyber Cafe</span>
+        </h1>
 
         <p>
-            Rajeev Nagar, Main Road, Opposite Chappan Bhog,
-            Near Nala Par, Patna, Bihar - 800024
+            Online Form Filling, Aadhaar Services, PAN Card,
+            Railway Ticket Booking, CSC Services, Printing,
+            Photocopy & All Digital Solutions Under One Roof.
         </p>
 
-        <h2>📞 9304935726 </h2> Whatsapp Now 
-
-        <div class="hero-btns">
-            <a href="#services" class="btn">Our Services</a>
-            <a href="tel:9304935726" class="btn btn2">Call Now</a>
-        </div>
-    </div>
-</section>
-    class="services" id="services">
-    <div class="container">
-
-        <div class="section-title">
-            <h2>Our Services</h2>
-            <p>All Online, Government, Banking & Digital Services Under One Roof</p>
+        <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Our Services</a>
+            <a href="#" class="btn btn-secondary">Contact Now</a>
         </div>
 
-        <div class="services-grid">
+        <div class="stats">
 
-            <!-- Government Documents -->
-            <div class="service-card">
-                <h3>📄 Government Documents</h3>
-                <ul>
-                    <li>Aadhaar Print</li>
-                    <li>PAN Card Apply</li>
-                    <li>Voter ID Card</li>
-                    <li>Driving Licence</li>
-                    <li>Ration Card Apply</li>
-                    <li>Passport Apply</li>
-                    <li>Birth Certificate</li>
-                    <li>Character Certificate</li>
-                    <li>ABC ID Card</li>
-                    <li>Life Certificate</li>
-                </ul>
+            <div class="stat-box">
+                <h2>5000+</h2>
+                <p>Happy Customers</p>
             </div>
 
-            <!-- Education -->
-            <div class="service-card">
-                <h3>🎓 Education Services</h3>
-                <ul>
-                    <li>Scholarship Form</li>
-                    <li>Admission Form</li>
-                    <li>Examination Form</li>
-                    <li>Bihar Student Credit Card</li>
-                    <li>Computer Certificate</li>
-                </ul>
+            <div class="stat-box">
+                <h2>50+</h2>
+                <p>Digital Services</p>
             </div>
 
-            <!-- Certificates -->
-            <div class="service-card">
-                <h3>🏢 Certificate & Registration</h3>
-                <ul>
-                    <li>Caste Certificate</li>
-                    <li>Residence Certificate</li>
-                    <li>Income Certificate</li>
-                    <li>NCL Certificate</li>
-                    <li>OBC Certificate</li>
-                    <li>EWS Certificate</li>
-                    <li>Udyam Registration</li>
-                    <li>E-Shram Card</li>
-                    <li>Kisan KYC</li>
-                </ul>
-            </div>
-
-            <!-- Banking -->
-            <div class="service-card">
-                <h3>💰 Banking Services</h3>
-                <ul>
-                    <li>Money Transfer</li>
-                    <li>AEPS</li>
-                    <li>UPI Cash Withdrawal</li>
-                    <li>ATM Cash Withdrawal</li>
-                    <li>BBPS Bill Payment</li>
-                    <li>PF Withdrawal</li>
-                    <li>Aadhaar Seeding</li>
-                    <li>ITR Filing</li>
-                </ul>
-            </div>
-
-            <!-- Ticket -->
-            <div class="service-card">
-                <h3>🚆 Online Services</h3>
-                <ul>
-                    <li>Train Ticket Booking</li>
-                    <li>Online Form Filling</li>
-                    <li>Bike/Car Challan Payment</li>
-                    <li>Sahara Online Services</li>
-                </ul>
-            </div>
-
-            <!-- Print -->
-            <div class="service-card">
-                <h3>🖨️ Print & Photo</h3>
-                <ul>
-                    <li>Photocopy & Print</li>
-                    <li>Scanning</li>
-                    <li>Lamination</li>
-                    <li>Passport Size Photo</li>
-                    <li>Family Photo</li>
-                </ul>
-            </div>
-
-            <!-- Schemes -->
-            <div class="service-card">
-                <h3>🤝 Government Schemes</h3>
-                <ul>
-                    <li>Ayushman Card</li>
-                    <li>Mahila Rojgar Yojana</li>
-                    <li>Berojgari Bhatta</li>
-                    <li>Vridhjan Pension</li>
-                </ul>
-            </div>
-
-            <!-- Repair -->
-            <div class="service-card">
-                <h3>💻 Computer & Mobile</h3>
-                <ul>
-                    <li>Computer/Laptop Repair</li>
-                    <li>Mobile Repairing</li>
-                    <li>Windows Installation</li>
-                </ul>
-            </div>
-
-            <!-- Other -->
-            <div class="service-card">
-                <h3>⚡ Other Services</h3>
-                <ul>
-                    <li>Nagar Nigam Property Tax</li>
-                    <li>Trackon Courier</li>
-                    <li>Gamka/Medical</li>
-                    <li>Jamin Rashid</li>
-                </ul>
+            <div class="stat-box">
+                <h2>24×7</h2>
+                <p>Customer Support</p>
             </div>
 
         </div>
 
     </div>
+
 </section>
+
+</body>
+</html>
 
