@@ -141,45 +141,6 @@
             color: #475569;
         }
 
-        /* Services Grid Layout */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            background: white;
-            padding: 2.5rem 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 1px solid #e2e8f0;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-icon {
-            font-size: 2.5rem;
-            color: #3b82f6;
-            margin-bottom: 1.5rem;
-        }
-
-        .service-card h3 {
-            font-size: 1.25rem;
-            color: #1e293b;
-            margin-bottom: 0.5rem;
-        }
-
-        .service-card p {
-            color: #64748b;
-            font-size: 0.95rem;
-        }
-
         /* Contact & Info Section */
         .contact-layout {
             display: grid;
@@ -279,127 +240,127 @@
 
     <!-- Hero Banner Section -->
     <section class="hero">
-        <h1> Shivansh Cyber Cafe </h1>
+        <h1>Shivansh Cyber Cafe</h1>
         <p>Fast, reliable, and secure digital services right at your convenience in Patna.</p>
         <a href="#contact" class="btn">Get In Touch</a>
     </section>
-   <!-- ==================== SERVICES SECTION START ==================== -->
-<section id="services" style="padding: 5rem 2rem; background-color: #f8fafc;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        
-        <h2 style="text-align: center; font-size: 2.2rem; color: #1e293b; margin-bottom: 3.5rem; font-family: 'Inter', sans-serif;">
-            Our Premium Digital Services
-            <span style="display: block; width: 60px; height: 4px; background-color: #3b82f6; margin: 0.5rem auto 0; border-radius: 2px;"></span>
-        </h2>
 
-        <!-- Grid Container for Categories -->
-        <div class="categories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+    <!-- ==================== SERVICES SECTION START ==================== -->
+    <section id="services" style="padding: 5rem 2rem; background-color: #f8fafc;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            
+            <!-- Catchy Custom Heading Section Added Here -->
+            <h2 style="text-align: center; color: #1e293b; margin-bottom: 3.5rem; font-family: 'Inter', sans-serif; line-height: 1.4;">
+                <span style="font-size: 1.4rem; color: #64748b; display: block; font-weight: 500; margin-bottom: 6px; letter-spacing: 0.5px;">Aapki Zaroorat, Hamari Zimmedari</span>
+                <span style="font-size: 2.4rem; font-weight: 700; color: #1e3a8a;">All Digital Services</span>
+                <span style="display: block; width: 60px; height: 4px; background-color: #3b82f6; margin: 0.8rem auto 0; border-radius: 2px;"></span>
+            </h2>
 
-            <!-- 1. Identity Services -->
-            <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #3b82f6;">
-                <h3 style="font-size: 1.4rem; color: #1e3a8a; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
-                    <span>🪪</span> Identity Services
-                </h3>
-                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Aadhaar Print</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Aadhaar Seeding</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 PAN Card Apply</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Voter ID Card</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Passport Apply</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 ABC ID Card</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Birth Certificate</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Character Certificate</li>
-                </ul>
-            </div>
+            <!-- Grid Container for Categories -->
+            <div class="categories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
 
-            <!-- 2. Student Services -->
-            <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #10b981;">
-                <h3 style="font-size: 1.4rem; color: #065f46; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
-                    <span>🎓</span> Student Services
-                </h3>
-                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Scholarship Form</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Admission Form</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Examination Form</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Bihar Student Credit Card</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Computer Certificate</li>
-                </ul>
-            </div>
+                <!-- 1. Identity Services -->
+                <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #3b82f6;">
+                    <h3 style="font-size: 1.4rem; color: #1e3a8a; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                        <span>🪪</span> Identity Services
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Aadhaar Print</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Aadhaar Seeding</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 PAN Card Apply</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Voter ID Card</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Passport Apply</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 ABC ID Card</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Birth Certificate</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Character Certificate</li>
+                    </ul>
+                </div>
 
-            <!-- 3. Banking Services -->
-            <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #f59e0b;">
-                <h3 style="font-size: 1.4rem; color: #92400e; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
-                    <span>💰</span> Banking Services
-                </h3>
-                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 AEPS (Aadhaar Cash)</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Money Transfer</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 ATM Cash Withdrawal</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 UPI Cash Withdrawal</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 BBPS (Bill Payments)</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 PF Withdrawal</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 ITR Filing</li>
-                </ul>
-            </div>
+                <!-- 2. Student Services -->
+                <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #10b981;">
+                    <h3 style="font-size: 1.4rem; color: #065f46; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                        <span>🎓</span> Student Services
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Scholarship Form</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Admission Form</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Examination Form</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Bihar Student Credit Card</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Computer Certificate</li>
+                    </ul>
+                </div>
 
-            <!-- 4. Government Services -->
-            <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #6366f1;">
-                <h3 style="font-size: 1.4rem; color: #3730a3; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
-                    <span>📄</span> Government Services
-                </h3>
-                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 E-Shram Card</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Ayushman Card</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Kisan KYC</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Ration Card Apply</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Driving Licence</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Udyam Registration</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 NCL / OBC / EWS</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Caste / Residence / Income</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Vridhjan Pension</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Berojgari Bhatta</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Mahila Rojgar Yojana</li>
-                </ul>
-            </div>
+                <!-- 3. Banking Services -->
+                <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #f59e0b;">
+                    <h3 style="font-size: 1.4rem; color: #92400e; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                        <span>💰</span> Banking Services
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 AEPS (Aadhaar Cash)</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Money Transfer</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 ATM Cash Withdrawal</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 UPI Cash Withdrawal</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 BBPS (Bill Payments)</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 PF Withdrawal</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 ITR Filing</li>
+                    </ul>
+                </div>
 
-            <!-- 5. Travel & Utility Services -->
-            <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #ec4899;">
-                <h3 style="font-size: 1.4rem; color: #9d174d; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
-                    <span>🚆</span> Travel Services
-                </h3>
-                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Train Ticket Booking</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Bike / Car Challan Payment</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Trackon Courier Service</li>
-                </ul>
-            </div>
+                <!-- 4. Government Services -->
+                <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #6366f1;">
+                    <h3 style="font-size: 1.4rem; color: #3730a3; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                        <span>📄</span> Government Services
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 E-Shram Card</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Ayushman Card</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Kisan KYC</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Ration Card Apply</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Driving Licence</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Udyam Registration</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 NCL / OBC / EWS</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Caste / Residence / Income</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Vridhjan Pension</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Berojgari Bhatta</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Mahila Rojgar Yojana</li>
+                    </ul>
+                </div>
 
-            <!-- 6. Technical Services -->
-            <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #a855f7;">
-                <h3 style="font-size: 1.4rem; color: #6b21a8; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
-                    <span>💻</span> Technical Services
-                </h3>
-                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Computer & Laptop Repair</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Mobile Repairing</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Window Installation</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 High-Quality Photocopy / Print</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Document Scanning</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Lamination</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Passport Size Photo</li>
-                    <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Family Photo Printing</li>
-                </ul>
-            </div>
+                <!-- 5. Travel & Utility Services -->
+                <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #ec4899;">
+                    <h3 style="font-size: 1.4rem; color: #9d174d; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                        <span>🚆</span> Travel Services
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Train Ticket Booking</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Bike / Car Challan Payment</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Trackon Courier Service</li>
+                    </ul>
+                </div>
 
-        </div>
-    </div>
-</section>
-<!-- ==================== SERVICES SECTION END ==================== -->
+                <!-- 6. Technical Services -->
+                <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #a855f7;">
+                    <h3 style="font-size: 1.4rem; color: #6b21a8; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                        <span>💻</span> Technical Services
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Computer & Laptop Repair</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Mobile Repairing</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Window Installation</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 High-Quality Photocopy / Print</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Document Scanning</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Lamination</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Passport Size Photo</li>
+                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Family Photo Printing</li>
+                    </ul>
                 </div>
 
             </div>
         </div>
-    </section>     <!-- About Us Section -->
+    </section>
+    <!-- ==================== SERVICES SECTION END ==================== -->
+
+    <!-- About Us Section -->
     <section class="section" id="about">
         <h2 class="section-title">About Us</h2>
         <div class="about-text">
@@ -420,7 +381,7 @@
                 </div>
             </div>
 
-            <!-- Map Placeholder (Aap yahan apna real Google Map iframe paste kar sakte hain) -->
+            <!-- Map Placeholder -->
             <div class="map-container">
                 <i class="fa-solid fa-map-location-dot" style="font-size: 2rem; color: #94a3b8; margin-right: 10px;"></i>
                 <span style="color: #64748b; font-weight: 500;">Google Maps View (Embed Iframe Here)</span>
@@ -441,4 +402,3 @@
 
 </body>
 </html>
-
