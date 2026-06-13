@@ -3,369 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivansh Cyber Cafe - Smart Digital Portal</title>
-    <!-- Premium Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-    
+    <title>Shivansh Cyber Cafe | Patna</title>
     <style>
-        * {
+        /* Base Setup */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0B132B;
-            color: #F4F6F9;
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(135deg, #1C2541 0%, #0B132B 100%);
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 2px solid #3A506B;
-        }
-        .logo-container img {
-            max-width: 150px;
-            height: auto;
-            margin-bottom: 15px;
-        }
-        h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.2rem;
-            color: #5BC0BE;
-            margin-bottom: 5px;
-        }
-        .tagline {
-            color: #C5D3E8;
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 30px 20px;
-        }
-        
-        /* 4-Step Tracker Style */
-        .process-section {
-            background: #1C2541;
-            padding: 25px;
-            border-radius: 16px;
-            margin-bottom: 40px;
-            border: 1px solid #3A506B;
-            text-align: center;
-        }
-        .process-title {
-            font-family: 'Poppins', sans-serif;
-            color: #5BC0BE;
-            margin-bottom: 20px;
-            font-size: 1.4rem;
-        }
-        .steps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        .step-card {
-            background: #0B132B;
-            padding: 15px;
-            border-radius: 12px;
-            border-left: 4px solid #5BC0BE;
-        }
-        .step-num {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #5BC0BE;
-            margin-bottom: 5px;
-        }
-        .step-card p {
-            font-size: 0.9rem;
-            color: #C5D3E8;
-        }
-
-        /* Services Dashboard Grid */
-        .dashboard-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.8rem;
-            color: #FFF;
-            margin-bottom: 25px;
-            text-align: center;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
-        }
-        .portal-card {
-            background: #1C2541;
-            border-radius: 16px;
-            padding: 25px;
-            border: 1px solid #3A506B;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .portal-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(91, 192, 190, 0.2);
-            border-color: #5BC0BE;
-        }
-        .card-header {
-            margin-bottom: 15px;
-        }
-        .card-header h3 {
-            font-family: 'Poppins', sans-serif;
-            color: #FFF;
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .required-docs {
-            background: #0B132B;
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-size: 0.85rem;
-            border-left: 3px solid #FFD166;
-        }
-        .required-docs strong {
-            color: #FFD166;
-            display: block;
-            margin-bottom: 4px;
-        }
-        .service-list {
-            font-size: 0.9rem;
-            color: #C5D3E8;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-        
-        /* Premium Buttons */
-        .action-btn {
-            display: block;
-            text-align: center;
-            background: #25D366;
-            color: #FFF;
-            padding: 12px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.95rem;
-            transition: background 0.3s ease;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
-        }
-        .action-btn:hover {
-            background: #1ebd54;
-        }
-        .review-section {
-            text-align: center;
-            margin: 5px 0 40px 0;
-            background: #1C2541;
-            padding: 30px;
-            border-radius: 16px;
-            border: 1px solid #3A506B;
-        }
-        .google-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: #FFF;
+            background-color: #f8f9fa;
             color: #333;
-            padding: 12px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            box-shadow: 0 4px 15px rgba(255,255,255,0.1);
-            transition: transform 0.2s ease;
-        }
-        .google-btn:hover {
-            transform: scale(1.03);
         }
 
-        footer {
-            background: #0B132B;
+        /* 1. Top Banner Header Area */
+        header {
+            background-color: #ffffff;
+            padding: 0;
             text-align: center;
-            padding: 30px 20px;
-            border-top: 1px solid #3A506B;
-            color: #A5B1C2;
-            font-size: 0.9rem;
+            border-bottom: 3px solid #0052d4;
         }
-        .counter-box {
-            margin-top: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
+        .main-banner {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #0052d4;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        /* Placeholder For Services (Hum Step-2 Me Banayenge) */
+        .coming-soon {
+            text-align: center;
+            padding: 50px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
+    <!-- STEP 1: AAPKA SHOP POSTER BANNER -->
     <header>
-        <div class="logo-container">
-            <img src="logo.png" alt="Shivansh Cyber Cafe Logo">
-        </div>
-        <h1>SHIVANSH CYBER CAFE</h1>
-        <p class="tagline">Rajeev Nagar, Patna - Aapki Apni Digital Online Shop</p>
+        <!-- Agar aapke poster ka naam alag hai (jaise poster.png), toh niche banner.jpg ki jagah wo naam likh dein -->
+        <img src="banner.jpg" alt="Shivansh Cyber Cafe Banner" class="main-banner">
     </header>
 
     <div class="container">
+        <h2 class="section-title">Our Digital Services</h2>
         
-        <!-- 4-Step Process Section -->
-        <div class="process-section">
-            <div class="process-title">Ghar Baithe Kaam Karwayein - 4 Easy Steps</div>
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-num">01</div>
-                    <p>Niche apni service card par click karein</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-num">02</div>
-                    <p>WhatsApp par auto-message aur Documents bhejein</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-num">03</div>
-                    <p>QR Code se safe online payment karein</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-num">04</div>
-                    <p>WhatsApp par hi receive ya final copy download karein</p>
-                </div>
-            </div>
+        <!-- Abhi ke liye placeholder, agle step me yahan dhasu cards aayenge -->
+        <div class="coming-soon">
+            ⏳ Banner set hone ke baad, hum yahan ek-ek karke aapki saari services jodna shuru karenge...
         </div>
-
-        <div class="dashboard-title">Our Digital Client-Dashboard</div>
-
-        <!-- Smart Grid Start -->
-        <div class="grid">
-
-            <!-- Card 1 -->
-            <div class="portal-card">
-                <div class="card-header">
-                    <h3>📁 Govt Documents & Cards</h3>
-                    <div class="service-list">Aadhar Print/Seeding, Pan Card, Voter ID, Driving Licence, Ration Card, Passport Apply, Udhyam Registration, Ayushman Card, ABC Id, E-Shram Card, Character Certificate.</div>
-                </div>
-                <div>
-                    <div class="required-docs">
-                        <strong>Required Files for WhatsApp:</strong>
-                        Aadhaar Card, Mobile Number, Passport Photo, Old Card Copy (if any).
-                    </div>
-                    <a href="https://wa.me/919304935726?text=Hello%20Shivansh%20Cyber%20Cafe%2C%20mujhe%20Govt%20Documents%20%2F%20PAN%20%2F%20Aadhar%20ka%20kaam%20karwana%20hai.%20Details%3A%20%0A-%20Naam%3A%20%0A-%20Service%3A%20" target="_blank" class="action-btn">📲 Upload & Apply via WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="portal-card">
-                <div class="card-header">
-                    <h3>📝 Online Forms & Admissions</h3>
-                    <div class="service-list">All Government Online Forms, Scholarship Forms, School/College Admission Forms, Examination Forms, Bihar Student Credit Card, Mahila Rojgar Yojana, Berojgari Bhatta.</div>
-                </div>
-                <div>
-                    <div class="required-docs">
-                        <strong>Required Files for WhatsApp:</strong>
-                        Educational Certificates, Cast/Income (if needed), Photo, Signature.
-                    </div>
-                    <a href="https://wa.me/919304935726?text=Hello%20Shivansh%20Cyber%20Cafe%2C%20mujhe%20Online%20Form%20%2F%20Scholarship%20bharna%20hai.%20Details%3A%20%0A-%20Naam%3A%20%0A-%20Exam%2FForm%20Name%3A%20" target="_blank" class="action-btn">📲 Send Details on WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="portal-card">
-                <div class="card-header">
-                    <h3>🏛️ Certificates & Land Records</h3>
-                    <div class="service-list">Cast, Residence & Income Certificates, NCL / OBC / EWS Certificates, ITR Filing, Nagar Nigam Property Tax, Jamin Rashid (Land Records), Birth & Life Certificate.</div>
-                </div>
-                <div>
-                    <div class="required-docs">
-                        <strong>Required Files for WhatsApp:</strong>
-                        Old Rashid/Khatian, Aadhaar, Income details, Parent's Documents.
-                    </div>
-                    <a href="https://wa.me/919304935726?text=Hello%20Shivansh%20Cyber%20Cafe%2C%20mujhe%20Income%20%2F%20Caste%20Certificate%20%2F%20Jamin%20Rashid%20ka%20kaam%20hai.%20Details%3A%20%0A-%20Naam%3A%20%0A-%20Kaam%3A%20" target="_blank" class="action-btn">📲 Send Docs on WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="portal-card">
-                <div class="card-header">
-                    <h3>💰 Banking & Cash Services</h3>
-                    <div class="service-list">Instant Money Transfer, Aeps Cash Services, UPI Cash Withdrawal, ATM Cash Withdrawal, PF Withdrawal, Sahara Online, BBPS Bill Payments & Challan Payments.</div>
-                </div>
-                <div>
-                    <div class="required-docs">
-                        <strong>Required Files for WhatsApp:</strong>
-                        Bank Account details / IFSC, Passbook Photo, PF UAN Number.
-                    </div>
-                    <a href="https://wa.me/919304935726?text=Hello%20Shivansh%20Cyber%20Cafe%2C%20mujhe%20Banking%20%2F%20PF%20Withdrawal%20%2F%20Challan%20ka%20kaam%20hai।" target="_blank" class="action-btn">📲 Message on WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="portal-card">
-                <div class="card-header">
-                    <h3>🖼️ Printing, Photo & Courier</h3>
-                    <div class="service-list">High-Quality Photocopy & Printing, Document Scanning, Lamination, Passport Size Photo, Family Photo, Trackon Courier Booking, Train & Flight Ticket Booking.</div>
-                </div>
-                <div>
-                    <div class="required-docs">
-                        <strong>Required Files for WhatsApp:</strong>
-                        PDF/Image for Print, Travel Dates & ID for Ticket Booking.
-                    </div>
-                    <a href="https://wa.me/919304935726?text=Hello%20Shivansh%20Cyber%20Cafe%2C%20mujhe%20Document%20Print%20%2F%20Ticket%20Booking%20karwani%20hai।" target="_blank" class="action-btn">📲 Send File on WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="portal-card">
-                <div class="card-header">
-                    <h3>🛠️ Tech & Hardware Support</h3>
-                    <div class="service-list">Computer & Laptop Repairing, Professional Mobile Repairing, Windows & Software Installation, Computer Certificates, Kissan K.y.c, Gamka/Medical Registration.</div>
-                </div>
-                <div>
-                    <div class="required-docs">
-                        <strong>Required Details for WhatsApp:</strong>
-                        Device Model Name, Problem Details, or KYC Details.
-                    </div>
-                    <a href="https://wa.me/919304935726?text=Hello%20Shivansh%20Cyber%20Cafe%2C%20mujhe%20Laptop%20%2F%20Mobile%20Repairing%20ki%20service%20chahiye।" target="_blank" class="action-btn">📲 Book Repair via WhatsApp</a>
-                </div>
-            </div>
-
-        </div>
-        <!-- Smart Grid End -->
-
-        <br><br><br>
-
-        <!-- Google Review Section -->
-        <div class="review-section">
-            <h2 style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; margin-bottom: 10px; color: #FFF;">Humari Service Acchi Lagi?</h2>
-            <p style="color: #C5D3E8; margin-bottom: 20px; font-size: 0.95rem;">Apna valuable feedback Google Maps par jaroor share karein!</p>
-            <a href="https://g.page/r/CdfVf1_S1-4zEAE/review" target="_blank" class="google-btn">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_\" G\"_Logo.svg" alt="G" style="height: 20px;">
-                Review Us On Google Maps
-            </a>
-        </div>
-
     </div>
 
     <footer>
         <p>© 2026 Shivansh Cyber Cafe. All Rights Reserved.</p>
-        <p style="font-size: 0.8rem; margin-top: 5px; color: #666;">Address: Rajeev Nagar Main Road, Opposite Chappan Bhog, Patna</p>
-        
-        <!-- 100% Working Visitor Counter -->
-        <div class="counter-box">
-            <span>Website Visitors:</span>
-            <img src="https://komarev.com/ghpvc/?username=shivansh-cyber-cafe-patna&color=blue&style=flat-square" alt="Count" style="height: 20px; border-radius: 3px; vertical-align: middle;">
-        </div>
+        <p style="font-size: 0.8rem; margin-top: 5px; color: #aaa;">Address: Rajeev Nagar Main Road, Opposite Chappan Bhog, Patna</p>
     </footer>
-
-</body>
-</html>
 
 </body>
 </html>
