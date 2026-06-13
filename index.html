@@ -1,210 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shivansh Cyber Cafe | Patna</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivansh Cyber Cafe | Patna</title>
+    <!-- Google Fonts for Professional Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Base Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
 
-body{
-background:#f5f5f5;
-color:#333;
-}
+        /* Header & Navigation */
+        header {
+            background-color: #0f172a; /* Premium Dark Color */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
 
-header{
-background:linear-gradient(135deg,#004aad,#007bff);
-color:white;
-text-align:center;
-padding:80px 20px;
-}
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
 
-header h1{
-font-size:3rem;
-margin-bottom:10px;
-}
+        .logo {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
 
-header p{
-margin:10px 0;
-}
+        .logo span {
+            color: #3b82f6;
+        }
 
-.btn{
-display:inline-block;
-background:white;
-color:#004aad;
-padding:12px 25px;
-text-decoration:none;
-border-radius:5px;
-margin-top:15px;
-font-weight:bold;
-}
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
 
-nav{
-background:#002d62;
-padding:15px;
-text-align:center;
-}
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
 
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
-}
+        .nav-links a:hover {
+            color: #3b82f6;
+        }
 
-section{
-padding:60px 10%;
-}
+        /* Hero Banner Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
 
-.section-title{
-text-align:center;
-color:#004aad;
-margin-bottom:30px;
-}
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
 
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
+        .hero .btn {
+            background-color: #ffffff;
+            color: #1e3a8a;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
 
-footer{
-background:#002d62;
-color:white;
-text-align:center;
-padding:20px;
-}
+        .hero .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-}
-</style>
+        /* Section Container */
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #1e293b;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #3b82f6;
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about-text {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #475569;
+        }
+
+        /* Services Grid Layout */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e2e8f0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: #3b82f6;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        /* Contact & Info Section */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        @media (max-width: 768px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-info h3 {
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+
+        .contact-details {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-details p {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .contact-details i {
+            color: #3b82f6;
+            width: 20px;
+        }
+
+        /* Map Embed Container */
+        .map-container {
+            width: 100%;
+            height: 300px;
+            background-color: #e2e8f0;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #cbd5e1;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-<h1>SHIVANSH CYBER CAFE</h1>
-<p>Your Trusted Digital Service Center</p>
-<p>Rajeev Nagar Main Road, Opposite Chappan Bhog, Patna</p>
-<p>📞 9304935726 | 🕖 7:00 AM - 10:00 PM</p>
-<a href="#contact" class="btn">Contact Us</a>
-</header>
+    <!-- Header Section -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Shivansh <span>Cyber Cafe</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
-<nav>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
+    <!-- Hero Banner Section -->
+    <section class="hero">
+        <h1>Your Trusted Digital Service Partner</h1>
+        <p>Fast, reliable, and secure digital services right at your convenience in Patna.</p>
+        <a href="#contact" class="btn">Get In Touch</a>
+    </section>
 
-<section id="about">
-<h2 class="section-title">About Us</h2>
-<p>
-Welcome to Shivansh Cyber Cafe. We provide PAN Card Services,
-Aadhaar Services, Online Form Filling, Railway & Flight Ticket Booking,
-Printing, Photocopy, CSC Services and much more.
-</p>
-</section>
+    <!-- About Us Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-text">
+            Welcome to Shivansh Cyber Cafe. We provide high-quality PAN Card Services, Aadhaar Services, Online Form Filling, Railway & Flight Ticket Booking, Printing, Photocopy, CSC Services, and much more. We are committed to processing your essential documentation with 100% accuracy.
+        </div>
+    </section>
 
-<section id="services">
-<h2 class="section-title">Our Services</h2>
+    <!-- Our Services Section -->
+    <section class="section" id="services" style="background-color: #f1f5f9; max-width: 100%;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-file-pen"></i></div>
+                    <h3>Online Forms</h3>
+                    <p>All Government & Private Job Forms submission with zero errors.</p>
+                </div>
 
-<div class="services">
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-id-card"></i></div>
+                    <h3>PAN Card</h3>
+                    <p>New PAN Card Application, corrections, and instant e-PAN generation.</p>
+                </div>
 
-<div class="card">
-<h3>Online Forms</h3>
-<p>All Government & Private Forms</p>
-</div>
+                <!-- Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-fingerprint"></i></div>
+                    <h3>Aadhaar Services</h3>
+                    <p>Aadhaar-linked updates, printouts, and digital verification work.</p>
+                </div>
 
-<div class="card">
-<h3>PAN Card</h3>
-<p>New PAN & Correction</p>
-</div>
+                <!-- Card 4 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <h3>Certificates</h3>
+                    <p>Fast processing of Income, Caste, Residence, and EWS certificates.</p>
+                </div>
 
-<div class="card">
-<h3>Aadhaar Services</h3>
-<p>Aadhaar Related Online Work</p>
-</div>
+                <!-- Card 5 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-train"></i></div>
+                    <h3>Railway Ticket</h3>
+                    <p>Authorized and swift rail ticket booking with confirmed seat matching.</p>
+                </div>
 
-<div class="card">
-<h3>Certificates</h3>
-<p>Income, Caste, Residence, EWS</p>
-</div>
+                <!-- Card 6 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-plane"></i></div>
+                    <h3>Flight Ticket</h3>
+                    <p>Domestic & International flight bookings at competitive pricing rates.</p>
+                </div>
 
-<div class="card">
-<h3>Railway Ticket</h3>
-<p>Fast Ticket Booking</p>
-</div>
+                <!-- Card 7 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>CSC Services</h3>
+                    <p>All Digital Seva and Central Government linked civic e-services.</p>
+                </div>
 
-<div class="card">
-<h3>Flight Ticket</h3>
-<p>Domestic & International Booking</p>
-</div>
+                <!-- Card 8 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-print"></i></div>
+                    <h3>Printing & Xerox</h3>
+                    <p>High-quality laser printouts, heavy duplication xerox, and document scanning.</p>
+                </div>
 
-<div class="card">
-<h3>CSC Services</h3>
-<p>All CSC Related Services</p>
-</div>
+                <!-- Card 9 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                    <h3>Resume Making</h3>
+                    <p>Professional modern resume layout planning and formal bio-data generation.</p>
+                </div>
 
-<div class="card">
-<h3>Printing & Photocopy</h3>
-<p>High Quality Print & Xerox</p>
-</div>
+            </div>
+        </div>
+    </section>
 
-<div class="card">
-<h3>Resume Making</h3>
-<p>Professional Resume & Bio-Data</p>
-</div>
+    <!-- Contact & Timings Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-layout">
+            
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <div class="contact-details">
+                    <p><i class="fa-solid fa-location-dot"></i> Rajeev Nagar Main Road, Opposite Chappan Bhog, PO - Keshari Nagar, Patna, Bihar, 800024</p>
+                    <p><i class="fa-solid fa-clock"></i> <strong>Working Hours:</strong> Open Daily: 07:00 AM - 09:00 PM</p>
+                </div>
+            </div>
 
-</div>
-</section>
+            <!-- Map Placeholder (Aap yahan apna real Google Map iframe paste kar sakte hain) -->
+            <div class="map-container">
+                <i class="fa-solid fa-map-location-dot" style="font-size: 2rem; color: #94a3b8; margin-right: 10px;"></i>
+                <span style="color: #64748b; font-weight: 500;">Google Maps View (Embed Iframe Here)</span>
+            </div>
 
-<section id="contact">
-<h2 class="section-title">Contact Us</h2>
+        </div>
+    </section>
 
-<p><b>Address:</b><br>
-Rajeev Nagar Main Road,<br>
-Opposite Chappan Bhog,<br>
-PO - Keshari Nagar,<br>
-Patna, Bihar - 800024
-</p>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/91YOUR_NUMBER" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-<br>
-
-<p><b>Phone:</b> 9304935726</p>
-<p><b>Email:</b> kunalrajin066@gmail.com</p>
-<p><b>Timing:</b> 7:00 AM - 10:00 PM</p>
-
-</section>
-
-<footer>
-<p>© 2026 Shivansh Cyber Cafe. All Rights Reserved.</p>
-</footer>
-
-<a class="whatsapp" href="https://wa.me/919304935726">
-WhatsApp
-</a>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Shivansh Cyber Cafe. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
