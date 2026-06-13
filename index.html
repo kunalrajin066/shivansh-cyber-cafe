@@ -1,310 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shivansh Cyber Cafe</title>
+<section class="services-section">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <h1>SHIVANSH CYBER CAFE</h1>
 
-<style>
+    <p class="address">
+        Rajeev Nagar, Main Road, Opposite Chappan Bhog,<br>
+        Near Nala Par, Patna, Bihar - 800024
+    </p>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+    <h2>📞 9304935726 | 9315759010</h2>
 
-body{
-background:#050816;
-color:white;
-overflow-x:hidden;
-}
+    <div class="services-container">
 
-/* Animated Background */
+        <div class="service-column">
 
-body::before{
-content:'';
-position:fixed;
-width:600px;
-height:600px;
-background:#00f7ff30;
-border-radius:50%;
-top:-200px;
-right:-200px;
-filter:blur(120px);
-z-index:-1;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Aadhaar Print karwana hai">◆ Aadhaar Print</a>
 
-body::after{
-content:'';
-position:fixed;
-width:500px;
-height:500px;
-background:#4f46e530;
-border-radius:50%;
-bottom:-200px;
-left:-200px;
-filter:blur(120px);
-z-index:-1;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe PAN Card Apply karwana hai">◆ PAN Card Apply</a>
 
-/* Navbar */
+            <a href="https://wa.me/919304935726?text=Mujhe Voter ID Card banwana hai">◆ Voter ID Card</a>
 
-.navbar{
-width:90%;
-max-width:1300px;
-margin:auto;
-padding:25px 0;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Driving Licence ka kaam karwana hai">◆ Driving Licence</a>
 
-.logo{
-font-size:28px;
-font-weight:800;
-color:#00f7ff;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Ration Card Apply karwana hai">◆ Ration Card Apply</a>
 
-.nav-links{
-display:flex;
-gap:30px;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Passport Apply karwana hai">◆ Passport Apply</a>
 
-.nav-links a{
-color:white;
-text-decoration:none;
-font-weight:500;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Udyam Registration karwana hai">◆ Udyam Registration</a>
 
-.hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:40px;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Photocopy ya Print karwana hai">◆ Photocopy / Print</a>
 
-.container{
-max-width:1300px;
-width:100%;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Scanning karwani hai">◆ Scanning</a>
 
-.left h1{
-font-size:70px;
-line-height:1.1;
-font-weight:800;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Lamination karwani hai">◆ Lamination</a>
 
-.left h1 span{
-color:#00f7ff;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Online Form bharwana hai">◆ Online Form</a>
 
-.left p{
-margin-top:20px;
-font-size:18px;
-color:#bfc7d5;
-line-height:1.8;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Scholarship Form bharwana hai">◆ Scholarship Form</a>
 
-.buttons{
-margin-top:30px;
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Admission Form bharwana hai">◆ Admission Form</a>
 
-.btn{
-padding:15px 30px;
-border:none;
-border-radius:12px;
-cursor:pointer;
-font-size:16px;
-font-weight:600;
-text-decoration:none;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Examination Form bharwana hai">◆ Examination Form</a>
 
-.primary{
-background:#00f7ff;
-color:#000;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Passport Size Photo chahiye">◆ Passport Size Photo</a>
 
-.secondary{
-background:transparent;
-border:1px solid #00f7ff;
-color:#00f7ff;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Family Photo service chahiye">◆ Family Photo</a>
 
-/* Dashboard Cards */
+            <a href="https://wa.me/919304935726?text=Mujhe Money Transfer karna hai">◆ Money Transfer</a>
 
-.dashboard{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe AEPS service chahiye">◆ AEPS</a>
 
-.card{
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,0.1);
-padding:30px;
-border-radius:20px;
-transition:.4s;
-text-align:center;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Caste Residence Income Certificate banana hai">◆ Caste / Residence / Income</a>
 
-.card:hover{
-transform:translateY(-10px);
-border-color:#00f7ff;
-box-shadow:0 0 30px #00f7ff40;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe NCL OBC EWS Certificate banana hai">◆ NCL / OBC / EWS</a>
 
-.icon{
-font-size:45px;
-margin-bottom:15px;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe ITR Filing karwani hai">◆ ITR Filing</a>
 
-.card h3{
-font-size:20px;
-margin-bottom:8px;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Nagar Nigam Pro Tax service chahiye">◆ Nagar Nigam Pro Tax</a>
 
-.card p{
-font-size:14px;
-color:#bfc7d5;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Jamin Rashid ka kaam karwana hai">◆ Jamin Rashid</a>
 
-.stats{
-margin-top:50px;
-display:flex;
-gap:30px;
-flex-wrap:wrap;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Vridhjan Pension ka kaam karwana hai">◆ Vridhjan Pension</a>
 
-.stat h2{
-color:#00f7ff;
-font-size:35px;
-}
+        </div>
 
-.stat p{
-font-size:14px;
-}
+        <div class="service-column">
 
-@media(max-width:900px){
+            <a href="https://wa.me/919304935726?text=Mujhe Bike Car Challan Payment karna hai">◆ Bike / Car Challan Payment</a>
 
-.container{
-grid-template-columns:1fr;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Mahila Rojgar Yojana ki jankari chahiye">◆ Mahila Rojgar Yojana</a>
 
-.left{
-text-align:center;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Computer Laptop Repair karwana hai">◆ Computer Laptop Repair</a>
 
-.left h1{
-font-size:45px;
-}
+            <a href="https://wa.me/919304935726?text=Mujhe Computer Certificate banana hai">◆ Computer Certificate</a>
 
-.buttons{
-justify-content:center;
-}
-}
+            <a href="https://wa.me/919304935726?text=Mujhe UPI Cash Withdrawal karna hai">◆ UPI Cash Withdrawal</a>
 
-</style>
-</head>
-<body>
+            <a href="https://wa.me/919304935726?text=Mujhe Kisan KYC karwani hai">◆ Kisan KYC</a>
 
-<nav class="navbar">
-<div class="logo">Shivansh Cyber Cafe</div>
+            <a href="https://wa.me/919304935726?text=Mujhe E Shram Card banana hai">◆ E-Shram Card</a>
 
-<div class="nav-links">
-<a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
-</div>
-</nav>
+            <a href="https://wa.me/919304935726?text=Mujhe Ayushman Card banana hai">◆ Ayushman Card</a>
 
-<section class="hero">
+            <a href="https://wa.me/919304935726?text=Mujhe Bihar Student Credit Card banana hai">◆ Bihar Student Credit Card</a>
 
-<div class="container">
+            <a href="https://wa.me/919304935726?text=Mujhe ABC ID Card banana hai">◆ ABC ID Card</a>
 
-<div class="left">
+            <a href="https://wa.me/919304935726?text=Mujhe Life Certificate banana hai">◆ Life Certificate</a>
 
-<h1>
-Your Digital <br>
-<span>Service Hub</span>
-</h1>
+            <a href="https://wa.me/919304935726?text=Mujhe BBPS service chahiye">◆ BBPS</a>
 
-<p>
-Online Form Filling, Aadhaar Services, PAN Card,
-Railway Ticket Booking, Scholarship Forms,
-Government Services, Printing & More.
-Everything at one trusted place.
-</p>
+            <a href="https://wa.me/919304935726?text=Mujhe Sahara Online service chahiye">◆ Sahara Online</a>
 
-<div class="buttons">
-<a href="#" class="btn primary">Explore Services</a>
-<a href="#" class="btn secondary">Contact Us</a>
-</div>
+            <a href="https://wa.me/919304935726?text=Mujhe Gamka Medical service chahiye">◆ Gamka / Medical</a>
 
-<div class="stats">
+            <a href="https://wa.me/919304935726?text=Mujhe PF Withdrawal karwana hai">◆ PF Withdrawal</a>
 
-<div class="stat">
-<h2>5000+</h2>
-<p>Customers</p>
-</div>
+            <a href="https://wa.me/919304935726?text=Mujhe Aadhaar Seeding karwani hai">◆ Aadhaar Seeding</a>
 
-<div class="stat">
-<h2>50+</h2>
-<p>Services</p>
-</div>
+            <a href="https://wa.me/919304935726?text=Mujhe ATM Cash Withdrawal karna hai">◆ ATM Cash Withdrawal</a>
 
-<div class="stat">
-<h2>4.9★</h2>
-<p>Ratings</p>
-</div>
+            <a href="https://wa.me/919304935726?text=Mujhe Berojgari Bhatta ke liye apply karna hai">◆ Berojgari Bhatta</a>
 
-</div>
+            <a href="https://wa.me/919304935726?text=Mujhe Trackon Courier service chahiye">◆ Trackon Courier</a>
 
-</div>
+            <a href="https://wa.me/919304935726?text=Mujhe Character Certificate banana hai">◆ Character Certificate</a>
 
-<div class="dashboard">
+            <a href="https://wa.me/919304935726?text=Mujhe Birth Certificate banana hai">◆ Birth Certificate</a>
 
-<div class="card">
-<div class="icon">🆔</div>
-<h3>Aadhaar Service</h3>
-<p>Update & Assistance</p>
-</div>
+            <a href="https://wa.me/919304935726?text=Mujhe Train Ticket book karna hai">◆ Train Ticket</a>
 
-<div class="card">
-<div class="icon">💳</div>
-<h3>PAN Card</h3>
-<p>Apply & Correction</p>
-</div>
+            <a href="https://wa.me/919304935726?text=Mujhe Window Installation karwana hai">◆ Window Installation</a>
 
-<div class="card">
-<div class="icon">🚆</div>
-<h3>Railway Ticket</h3>
-<p>Fast Booking</p>
-</div>
+            <a href="https://wa.me/919304935726?text=Mujhe Mobile Repairing karwani hai">◆ Mobile Repairing</a>
 
-<div class="card">
-<div class="icon">🖨️</div>
-<h3>Printing</h3>
-<p>Photo & Documents</p>
-</div>
+        </div>
 
-</div>
-
-</div>
+    </div>
 
 </section>
-
-</body>
-</html>
