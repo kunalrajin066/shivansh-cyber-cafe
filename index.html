@@ -1,419 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="google-site-verification" content="4ARfFXs3cBj44Dg_8Q9_qKVS7lXpP9UJ7EQL29IIrZw" />
+
+<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Shivansh Cyber Cafe | Patna</title>
-    <!-- Google Fonts for Professional Look -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        /* Base Styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
 
-        body {
-            background-color: #f8fafc;
-            color: #334155;
-            line-height: 1.6;
-        }
+    <meta name="description"
+        content="Patna's Trusted Digital Service Center | PAN Card | Aadhaar | Passport | ITR | Railway Ticket | Online Form">
 
-        /* Header & Navigation */
-        header {
-            background-color: #0f172a; /* Premium Dark Color */
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+    <link rel="stylesheet" href="style.css">
 
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-        .logo {
-            color: #ffffff;
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        .logo span {
-            color: #3b82f6;
-        }
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: #cbd5e1;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #3b82f6;
-        }
-
-        /* Hero Banner Section */
-        .hero {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-            color: white;
-            text-align: center;
-            padding: 5.5rem 2rem;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            letter-spacing: -0.5px;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            opacity: 0.95;
-            max-width: 650px;
-            margin: 0 auto 2rem;
-            font-weight: 400;
-            line-height: 1.5;
-        }
-
-        .hero .btn {
-            background-color: #ffffff;
-            color: #1e3a8a;
-            padding: 0.9rem 2.5rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 15px rgba(255,255,255,0.3);
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .hero .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255,255,255,0.5);
-        }
-
-        /* Section Container */
-        .section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 5rem 2rem;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            color: #1e293b;
-            margin-bottom: 3rem;
-            position: relative;
-        }
-
-        /* About Section */
-        .about-text {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.1rem;
-            color: #475569;
-        }
-
-        /* Contact & Info Section */
-        .contact-layout {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: start;
-        }
-
-        @media (max-width: 768px) {
-            .contact-layout {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .contact-info h3 {
-            margin-bottom: 1rem;
-            color: #1e293b;
-        }
-
-        .contact-details {
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-details p {
-            margin-bottom: 0.75rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .contact-details i {
-            color: #3b82f6;
-            width: 20px;
-        }
-
-        /* Map Embed Container */
-        .map-container {
-            width: 100%;
-            height: 300px;
-            background-color: #e2e8f0;
-            border-radius: 12px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #cbd5e1;
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25d366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-            z-index: 1000;
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-        }
-
-        /* Footer */
-        footer {
-            background-color: #0f172a;
-            color: #94a3b8;
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            margin-top: 4rem;
-        }
-    </style>
-</head>
     <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <div class="nav-container">
-            <div class="logo">Shivansh <span>Cyber Cafe</span></div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+<!--================ NAVBAR ================-->
 
-    <!-- Hero Banner Section -->
-    <section class="hero">
-        <h1>Shivansh Cyber Cafe</h1>
-        <p>Patna ka sabse bharosemand digital center. Ghar baithe ya shop par aakar paiye 100% accurate aur fast internet services.</p>
-        
-        <!-- Clean Link Without Font Glitches -->
-        <a href="https://wa.me/919304935726?text=Hello%20Shivansh%20Cyber%20Cafe,%20mujhe%20ek%20service%20ke%20silsile%20me%20baat%20karni%20hai." 
-           target="_blank" 
-           class="btn">
-            Abhi Contact Karein <i class="fa-brands fa-whatsapp" style="color: #25d366; margin-left: 2px;"></i> <span style="font-size: 0.9rem; font-weight: 400; opacity: 0.8; margin-left: 5px;">(Fast Service)</span>
-        </a>
-    </section>
+<header>
 
-    <!-- ==================== SERVICES SECTION START ==================== -->
-    <section id="services" style="padding: 5rem 2rem; background-color: #f8fafc;">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            
-            <!-- Catchy Title -->
-            <h2 style="text-align: center; color: #1e293b; margin-bottom: 3.5rem; font-family: 'Inter', sans-serif; line-height: 1.4;">
-                <span style="font-size: 1.4rem; color: #64748b; display: block; font-weight: 500; margin-bottom: 6px; letter-spacing: 0.5px;">Aapki Zaroorat, Hamari Zimmedari</span>
-                <span style="font-size: 2.4rem; font-weight: 700; color: #1e3a8a;">All Digital Services</span>
-                <span style="display: block; width: 60px; height: 4px; background-color: #3b82f6; margin: 0.8rem auto 0; border-radius: 2px;"></span>
-            </h2>
+<div class="container nav">
 
-            <!-- Grid Container for Categories -->
-            <div class="categories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+<a href="#" class="logo">
 
-                <!-- 1. Identity Services -->
-                <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #3b82f6;">
-                    <h3 style="font-size: 1.4rem; color: #1e3a8a; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
-                        <span>🪪</span> Identity Services
-                    </h3>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Aadhar Print</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Aadhar Seeding</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Pan Card Apply</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Voter Id Card</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Passport Apply</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 ABC Id Card</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Birth Certificate</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Character Certificate</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Life Certificate</li>
-                    </ul>
-                </div>
+<img src="images/logo.png">
 
-                <!-- 2. Student Services -->
-                <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #10b981;">
-                    <h3 style="font-size: 1.4rem; color: #065f46; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
-                        <span>🎓</span> Student Services
-                    </h3>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Online Form</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Scholarship Form</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Addmission Form</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Examination Form</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Bihar Student Credit Card</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Computer Certificate</li>
-                    </ul>
-                </div>
+<span>Shivansh <b>Cyber Cafe</b></span>
 
-                <!-- 3. Banking & Tax Services -->
-                <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #f59e0b;">
-                    <h3 style="font-size: 1.4rem; color: #92400e; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
-                        <span>💰</span> Banking Services
-                    </h3>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Aeps (Aadhaar Cash)</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Money Transfer</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 ATM Cash Withdrawal</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 UPI Cash Withdrawal</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 BBPS (Bill Payments)</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 PF Withdrawal</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 ITR Filling</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Nagar Nigam Pro.Tax</li>
-                    </ul>
-                </div>
+</a>
 
-                <!-- 4. Government Services -->
-                <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #6366f1;">
-                    <h3 style="font-size: 1.4rem; color: #3730a3; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
-                        <span>📄</span> Government Services
-                    </h3>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 E-Shram Card</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Ayushman Card</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Kissan K.y.c</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Ration Card Apply</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Driving Licence</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Udhyam Registration</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 NCL / OBC / EWS</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Cast / Residence / Income</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Vridhjan Pension</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Berojgari Bhatta</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Mahila Rojgar Yojana</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Sahara Online</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Jamin Rashid</li>
-                    </ul>
-                </div>
+<nav>
 
-                <!-- 5. Travel & Courier Services -->
-                <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #ec4899;">
-                    <h3 style="font-size: 1.4rem; color: #9d174d; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
-                        <span>🚆</span> Travel Services
-                    </h3>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Train Ticket</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Bike / Car Challan Payment</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Trackon Courier</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Gamka / Medical</li>
-                    </ul>
-                </div>
+<ul>
 
-                <!-- 6. Technical & Studio Services -->
-                <div class="category-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 2rem; border-top: 5px solid #a855f7;">
-                    <h3 style="font-size: 1.4rem; color: #6b21a8; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
-                        <span>💻</span> Technical Services
-                    </h3>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Computer Laptop Repair</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Mobile Repairing</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Window Installation</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Photocopy / Print</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Scanning</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Lemination</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Passport Size Photo</li>
-                        <li style="padding: 8px 12px; background: #f1f5f9; border-radius: 8px; color: #475569; font-weight: 500;">🔹 Family Photo</li>
-                    </ul>
-                </div>
+<li><a href="#">Home</a></li>
 
-            </div>
-        </div>
-    </section>
-    <!-- ==================== SERVICES SECTION END ==================== -->
+<li><a href="#services">Services</a></li>
 
-    <!-- About Us Section -->
-    <section class="section" id="about">
-        <h2 class="section-title">About Us</h2>
-        <div class="about-text">
-            Welcome to Shivansh Cyber Cafe. We provide high-quality documentation, student exam form fillings, printing solutions, and government online applications with 100% precision and trust in Patna.
-        </div>
-    </section>
+<li><a href="#about">About</a></li>
 
-    <!-- Contact & Timings Section -->
-    <section class="section" id="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="contact-layout">
-            
-            <div class="contact-info">
-                <h3>Get In Touch</h3>
-                <div class="contact-details">
-                    <p><i class="fa-solid fa-location-dot"></i> Rajeev Nagar, Main Road, Opposite Chappan Bhog, Near Nala Par, Patna, Bihar-800024</p>
-                    <p><i class="fa-solid fa-phone"></i> <strong>Mobile:</strong> +91 9304935726</p>
-                    <p><i class="fa-solid fa-clock"></i> <strong>Working Hours:</strong> Open Daily: 07:00 AM - 09:00 PM</p>
-                </div>
-            </div>
+<li><a href="#gallery">Gallery</a></li>
 
-           <!-- Map Placeholder -->
-<div class="map-container" style="width: 100%; height: 300px; border-radius: 12px; overflow: hidden; border: 1px solid #cbd5e1;">
-                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.564483789312!2d85.10543637539556!3d25.61939107744383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed57f72f09919b%3A0x6bbfda7456d9539d!2sRajeev%20Nagar%20Main%20Rd%2C%20Patna%2C%20Bihar%20800024!5e0!3m2!1sen!2sin!4v1718302100000!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<li><a href="#contact">Contact</a></li>
 
-            </div>
+</ul>
 
-        </div>
-    </section>
+</nav>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919304935726" class="whatsapp-float" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+<a href="https://wa.me/919304935726" class="btn">
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2026 Shivansh Cyber Cafe. All Rights Reserved.</p>
-    </footer>
+<i class="fab fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
+</div>
+
+</header>
+
+<!--================ HERO ================-->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="container hero-content">
+
+<div class="left">
+
+<h3>Patna's Trusted Digital Service Center</h3>
+
+<h1>
+
+One Stop Solution For All
+
+<span>Digital Services</span>
+
+</h1>
+
+<p>
+
+PAN Card, Aadhaar, Passport, ITR Filing,
+
+Railway Ticket, Flight Ticket,
+
+Income, Caste, Residence Certificate,
+
+Resume, GST, Udyam Registration
+
+aur sabhi Online Government Forms.
+
+</p>
+
+<div class="hero-btn">
+
+<a href="https://wa.me/919304935726" class="primary">
+
+<i class="fab fa-whatsapp"></i>
+
+Chat Now
+
+</a>
+
+<a href="tel:9304935726" class="secondary">
+
+<i class="fa-solid fa-phone"></i>
+
+Call Now
+
+</a>
+
+</div>
+
+<div class="rating">
+
+<div>
+
+<h2>10000+</h2>
+
+<span>Happy Customers</span>
+
+</div>
+
+<div>
+
+<h2>50+</h2>
+
+<span>Services</span>
+
+</div>
+
+<div>
+
+<h2>★★★★★</h2>
+
+<span>Trusted</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<img src="images/hero.jpg" alt="Shivansh Cyber Cafe">
+
+</div>
+
+</div>
+
+</section>
 
 </body>
-</html>
-</body>
+
 </html>
