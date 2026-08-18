@@ -1,184 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Shivansh Cyber Cafe | Patna</title>
-
-    <meta name="description"
-        content="Patna's Trusted Digital Service Center | PAN Card | Aadhaar | Passport | ITR | Railway Ticket | Online Form">
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    <title>Shivansh Cyber Cafe | Digital Services in Patna</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #e9f2fa;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+        header p {
+            margin: 10px 0 5px 0;
+            font-size: 1.1em;
+        }
+        .contact-info a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .timings {
+            background-color: #ff9800;
+            color: white;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .category-card {
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            padding: 20px;
+            border-top: 4px solid var(--primary-color);
+        }
+        .category-card h2 {
+            color: var(--primary-color);
+            font-size: 1.4em;
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .service-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .service-list li {
+            margin-bottom: 10px;
+        }
+        .service-list a {
+            display: block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 12px 15px;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        .service-list a::before {
+            content: "📲";
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        .service-list a:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
-
 <body>
-font-family:'Poppins',sans-serif;
-    background:#071126;
-    color:#fff;
-    overflow-x:hidden;
-}
-<!--================ NAVBAR ================-->
 
-<header>
-       position:fixed;
-    width:100%;
-    top:0;
-    left:0;
-    z-index:999;
-    background:rgba(5,12,30,.75);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-<div class="container nav">
-
-<a href="#" class="logo">
-
-<img src="images/logo.png">
-
-<span>Shivansh <b>Cyber Cafe</b></span>
-
-</a>
-
-<nav>
-
-<ul>
-
-<li><a href="#">Home</a></li>
-
-<li><a href="#services">Services</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#gallery">Gallery</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
-<a href="https://wa.me/919304935726" class="btn">
-
-<i class="fab fa-whatsapp"></i>
-
-WhatsApp
-
-</a>
-
-</div>
-
-</header>
-
-<!--================ HERO ================-->
-
-<section class="hero">
-
-<div class="overlay"></div>
-
-<div class="container hero-content">
-
-<div class="left">
-
-<h3>Patna's Trusted Digital Service Center</h3>
-
-<h1>
-
-One Stop Solution For All
-
-<span>Digital Services</span>
-
-</h1>
-
-<p>
-
-PAN Card, Aadhaar, Passport, ITR Filing,
-
-Railway Ticket, Flight Ticket,
-
-Income, Caste, Residence Certificate,
-
-Resume, GST, Udyam Registration
-
-aur sabhi Online Government Forms.
-
-</p>
-
-<div class="hero-btn">
-
-<a href="https://wa.me/919304935726" class="primary">
-
-<i class="fab fa-whatsapp"></i>
-
-Chat Now
-
-</a>
-
-<a href="tel:9304935726" class="secondary">
-
-<i class="fa-solid fa-phone"></i>
-
-Call Now
-
-</a>
-
-</div>
-
-<div class="rating">
-
-<div>
-
-<h2>10000+</h2>
-
-<span>Happy Customers</span>
-
-</div>
-
-<div>
-
-<h2>50+</h2>
-
-<span>Services</span>
-
-</div>
-
-<div>
-
-<h2>★★★★★</h2>
-
-<span>Trusted</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="right">
-
-<img src="images/hero.jpg" alt="Shivansh Cyber Cafe">
-
-</div>
-
-</div>
-
-</section>
+    <header>
+        <h1>SHIVANSH CYBER CAFE</h1>
+        <p>Rajeev Nagar, Main Road, Opposite Chappan Bhog, Near Nala Par, Patna, Bihar-800024</p>
+        <p class="contact-info">📞 Call/WhatsApp: <a href="tel:9304935726">9304935726</a>, <a href="tel:9315759010">9315759010</a></p>
+        <div class="timings">🕒 Open Daily: 7:00 AM - 9:00 PM</div>
+    </header>
+
+    <div class="container">
+        <!-- Category 1 -->
+        <div class="category-card">
+            <h2>🏛️ Govt. IDs & Registrations</h2>
+            <ul class="service-list">
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Aadhar%20Print%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Aadhar Print</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Aadhar%20Seeding%20karwani%20hai" target="_blank">Aadhar Seeding</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Pan%20Card%20ka%20kaam%20hai" target="_blank">Pan Card Apply / Correction</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Voter%20Id%20Card%20ki%20service%20chahiye" target="_blank">Voter Id Card</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Driving%20Licence%20ka%20kaam%20hai" target="_blank">Driving Licence</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Ration%20Card%20ka%20kaam%20hai" target="_blank">Ration Card Apply</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Passport%20Apply%20karna%20hai" target="_blank">Passport Apply</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Udhyam%20Registration%20karna%20hai" target="_blank">Udhyam Registration</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20E-Shram%20Card%20banwana%20hai" target="_blank">E-Shram Card</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Ayushman%20Card%20banwana%20hai" target="_blank">Ayushman Card</a></li>
+            </ul>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="category-card">
+            <h2>📜 Certificates & RTPS</h2>
+            <ul class="service-list">
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Cast/Residence/Income%20certificate%20banwana%20hai" target="_blank">Cast/Residence/Income</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Tatkal%20RTPS%20certificate%20banwana%20hai" target="_blank">Tatkal RTPS Service</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20NCL/OBC/EWS%20certificate%20banwana%20hai" target="_blank">NCL/OBC/EWS</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Character%20Certificate%20banwana%20hai" target="_blank">Character Certificate</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Birth%20Certificate%20banwana%20hai" target="_blank">Birth Certificate</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Life%20Certificate%20banwana%20hai" target="_blank">Life Certificate</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Computer%20Certificate%20chahiye" target="_blank">Computer Certificate</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Gamka/Medical%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Gamka/Medical</a></li>
+            </ul>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="category-card">
+            <h2>🗺️ Bihar Land Records</h2>
+            <ul class="service-list">
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Jamin%20Rashid%20katwana%20hai" target="_blank">Jamin Rashid (Bhu-Lagaan)</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Dakhil%20Kharij%20ya%20Mutation%20karwana%20hai" target="_blank">Dakhil Kharij (Mutation)</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20LPC%20banwana%20hai" target="_blank">LPC Certificate</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Jamin%20ka%20Parimarjan%20karwana%20hai" target="_blank">Parimarjan (Correction)</a></li>
+            </ul>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="category-card">
+            <h2>🌾 Agriculture & Yojana</h2>
+            <ul class="service-list">
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20PM%20Kisan%20ya%20DBT%20ka%20kaam%20hai" target="_blank">Kissan K.y.c / PM Kisan</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Diesel%20Anudan%20Yojana%20ka%20form%20bharna%20hai" target="_blank">Diesel Anudan Yojana</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Fasal%20Bima%20Yojana%20ka%20form%20bharna%20hai" target="_blank">Bihar Fasal Sahayata</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Vridhjan%20Pension%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Vridhjan Pension</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Elabharthi%20KYC%20karwana%20hai" target="_blank">Elabharthi KYC</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Mahila%20Rojgar%20Yojana%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Mahila Rojgar Yojana</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Berojgari%20Bhatta%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Berojgari Bhatta</a></li>
+            </ul>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="category-card">
+            <h2>🎓 Students & Education</h2>
+            <ul class="service-list">
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Govt%20Job%20Vacancy%20ka%20Form%20bharna%20hai" target="_blank">Govt Job Forms (BPSC/BSSC)</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Bihar%20Board%20ka%20kaam%20hai" target="_blank">Bihar Board Forms</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Online%20Form%20bharna%20hai" target="_blank">General Online Forms</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Scholarship%20Form%20bharna%20hai" target="_blank">Scholarship Form</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Addmission%20Form%20bharna%20hai" target="_blank">Admission Form</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Examination%20Form%20bharna%20hai" target="_blank">Examination Form</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Bihar%20Student%20Credit%20Card%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Student Credit Card</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20ABC%20Id%20Card%20banwana%20hai" target="_blank">ABC Id Card</a></li>
+            </ul>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="category-card">
+            <h2>💰 Banking & Finance</h2>
+            <ul class="service-list">
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Money%20Transfer%20karna%20hai" target="_blank">Money Transfer</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Aeps%20service%20chahiye" target="_blank">AEPS</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20UPI%20Cash%20Withdrawal%20karna%20hai" target="_blank">UPI Cash Withdrawal</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20ATM%20Cash%20Withdrawal%20karna%20hai" target="_blank">ATM Cash Withdrawal</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20PF%20Withdrawal%20karna%20hai" target="_blank">PF Withdrawal</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20ITR%20Filling%20karwani%20hai" target="_blank">ITR Filling</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Nagar%20Nigam%20Property%20Tax%20bharna%20hai" target="_blank">Nagar Nigam Pro.Tax</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Challan%20Payment%20karna%20hai" target="_blank">Bike/Car Challan Payment</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20BBPS%20ya%20Bill%20Payment%20karna%20hai" target="_blank">BBPS (Bill Payments)</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Sahara%20Online%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Sahara Online Refund</a></li>
+            </ul>
+        </div>
+
+        <!-- Category 7 -->
+        <div class="category-card">
+            <h2>🖨️ Printing & Travel</h2>
+            <ul class="service-list">
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Photocopy/Print%20karwana%20hai" target="_blank">Photocopy/Print</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Scanning%20karwani%20hai" target="_blank">Scanning</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Lemination%20karwana%20hai" target="_blank">Lamination</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Passport%20Size%20Photo%20banwani%20hai" target="_blank">Passport Size Photo</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Family%20Photo%20banwani%20hai" target="_blank">Family Photo</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Ticket%20book%20karna%20hai" target="_blank">Train/Flight Ticket</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Bike/Car%20ka%20HSRP%20Number%20Plate%20book%20karna%20hai" target="_blank">HSRP Number Plate</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Trackon%20Courier%20ki%20service%20chahiye" target="_blank">Trackon Courier</a></li>
+            </ul>
+        </div>
+
+        <!-- Category 8 -->
+        <div class="category-card">
+            <h2>💻 Tech Repair & Others</h2>
+            <ul class="service-list">
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Computer%20ya%20Laptop%20Repair%20karwana%20hai" target="_blank">Computer/Laptop Repair</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Mobile%20Repairing%20karwani%20hai" target="_blank">Mobile Repairing</a></li>
+                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Window%20Installation%20karwana%20hai" target="_blank">Window Installation</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Shivansh Cyber Cafe. All Rights Reserved.</p>
+        <p>Your Trusted Digital Partner in Patna</p>
+    </footer>
 
 </body>
-
 </html>
