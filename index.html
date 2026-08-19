@@ -3,289 +3,2663 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Shivansh Cyber Cafe - All Digital Services Under One Roof in Rajeev Nagar, Patna. Aadhaar, PAN Card, Driving Licence, Certificates, Online Forms, PF, ITR, Printing, Ticket Booking and more.">
+
+    <meta name="keywords" content="Shivansh Cyber Cafe, Cyber Cafe Patna, Rajeev Nagar Cyber Cafe, Online Form Patna, PAN Card, Aadhaar, Driving Licence, PF, ITR">
+
+    <meta name="author" content="Shivansh Cyber Cafe">
+
     <title>Shivansh Cyber Cafe | Digital Services in Patna</title>
+
     <style>
+
+        /* =========================================================
+           SHIVANSH CYBER CAFE - PREMIUM WEBSITE
+           ========================================================= */
+
         :root {
-            --primary-color: #0056b3;
-            --secondary-color: #e9f2fa;
-            --text-color: #333;
+            --primary: #0757b8;
+            --primary-dark: #063b7c;
+            --primary-light: #eaf3ff;
+            --accent: #00c853;
+            --accent-dark: #00963f;
+            --orange: #ff9800;
+            --dark: #071b33;
+            --text: #26364a;
+            --muted: #6b7b8f;
             --white: #ffffff;
+            --light: #f4f8fc;
+            --border: #e2eaf3;
+            --shadow: 0 12px 35px rgba(12, 57, 105, 0.10);
+            --radius: 18px;
         }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--light);
+            color: var(--text);
+            line-height: 1.6;
         }
-        header {
-            background-color: var(--primary-color);
-            color: var(--white);
-            text-align: center;
-            padding: 30px 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            letter-spacing: 1px;
-        }
-        header p {
-            margin: 10px 0 5px 0;
-            font-size: 1.1em;
-        }
-        .contact-info a {
-            color: #ffd700;
+
+        a {
             text-decoration: none;
-            font-weight: bold;
         }
-        .timings {
-            background-color: #ff9800;
+
+        button,
+        input {
+            font-family: inherit;
+        }
+
+        /* =========================================================
+           TOP BAR
+           ========================================================= */
+
+        .top-bar {
+            background: #041426;
             color: white;
-            display: inline-block;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            margin-top: 10px;
-            font-weight: bold;
+            padding: 9px 20px;
+            font-size: 13px;
         }
-        .container {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
+
+        .top-bar-inner {
+            max-width: 1250px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
         }
-        .category-card {
-            background: var(--white);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-            padding: 20px;
-            border-top: 4px solid var(--primary-color);
+
+        .top-left,
+        .top-right {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
         }
-        .category-card h2 {
-            color: var(--primary-color);
-            font-size: 1.4em;
-            margin-top: 0;
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 10px;
+
+        .top-bar a {
+            color: white;
+        }
+
+        .top-bar a:hover {
+            color: #5cff9a;
+        }
+
+        /* =========================================================
+           HEADER / HERO
+           ========================================================= */
+
+        header {
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 15% 20%, rgba(0, 200, 255, 0.20), transparent 30%),
+                radial-gradient(circle at 85% 80%, rgba(0, 255, 145, 0.13), transparent 28%),
+                linear-gradient(135deg, #064b9e, #0872d4 55%, #063c7e);
+            color: white;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border: 1px solid rgba(255,255,255,0.10);
+            border-radius: 50%;
+            top: -230px;
+            right: -100px;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 50%;
+            bottom: -180px;
+            left: -100px;
+        }
+
+        .hero {
+            position: relative;
+            z-index: 2;
+            max-width: 1250px;
+            margin: auto;
+            padding: 55px 20px 65px;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.13);
+            border: 1px solid rgba(255,255,255,0.20);
+            backdrop-filter: blur(10px);
+            padding: 8px 17px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.3rem, 6vw, 4.7rem);
+            line-height: 1.05;
+            letter-spacing: -1px;
             margin-bottom: 15px;
+            font-weight: 900;
         }
-        .service-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+
+        .hero h1 span {
+            color: #8dffbd;
         }
-        .service-list li {
-            margin-bottom: 10px;
+
+        .hero-subtitle {
+            max-width: 780px;
+            margin: auto;
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: rgba(255,255,255,0.92);
         }
-        .service-list a {
+
+        .hero-address {
+            margin: 18px auto 0;
+            max-width: 850px;
+            font-size: 15px;
+            color: rgba(255,255,255,0.88);
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .hero-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            padding: 13px 23px;
+            border-radius: 50px;
+            font-weight: 800;
+            transition: 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-whatsapp {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 10px 25px rgba(0,200,83,0.25);
+        }
+
+        .btn-whatsapp:hover {
+            background: var(--accent-dark);
+        }
+
+        .btn-call {
+            background: white;
+            color: var(--primary-dark);
+        }
+
+        .btn-call:hover {
+            background: #edf6ff;
+        }
+
+        .btn-services {
+            background: rgba(255,255,255,0.12);
+            color: white;
+        }
+
+        .timing {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            margin-top: 22px;
+            background: var(--orange);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 800;
+            box-shadow: 0 8px 20px rgba(255,152,0,0.22);
+        }
+
+        /* =========================================================
+           STATS
+           ========================================================= */
+
+        .stats-wrapper {
+            max-width: 1100px;
+            margin: -28px auto 0;
+            padding: 0 20px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .stats {
+            background: white;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .stat {
+            text-align: center;
+            padding: 22px 12px;
+            border-right: 1px solid var(--border);
+        }
+
+        .stat:last-child {
+            border-right: 0;
+        }
+
+        .stat strong {
             display: block;
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            text-decoration: none;
-            padding: 12px 15px;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: all 0.3s ease;
+            color: var(--primary);
+            font-size: 24px;
+            font-weight: 900;
+        }
+
+        .stat span {
+            color: var(--muted);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        /* =========================================================
+           SEARCH
+           ========================================================= */
+
+        .search-section {
+            max-width: 1000px;
+            margin: 45px auto 25px;
+            padding: 0 20px;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-heading .small-title {
+            color: var(--primary);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        .section-heading h2 {
+            color: var(--dark);
+            font-size: clamp(1.7rem, 4vw, 2.5rem);
+            margin-top: 5px;
+        }
+
+        .search-box {
+            background: white;
+            padding: 9px;
+            border-radius: 60px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
             display: flex;
             align-items: center;
         }
-        .service-list a::before {
-            content: "📲";
-            margin-right: 10px;
-            font-size: 1.2em;
+
+        .search-icon {
+            font-size: 21px;
+            padding-left: 18px;
         }
-        .service-list a:hover {
-            background-color: var(--primary-color);
-            color: var(--white);
-            transform: translateX(5px);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+        #serviceSearch {
+            width: 100%;
+            border: 0;
+            outline: none;
+            font-size: 16px;
+            padding: 14px 15px;
+            color: var(--text);
+            background: transparent;
         }
-        footer {
-            background-color: #2c3e50;
+
+        /* =========================================================
+           QUICK SERVICES
+           ========================================================= */
+
+        .quick-section {
+            max-width: 1200px;
+            margin: 25px auto 35px;
+            padding: 0 20px;
+        }
+
+        .quick-list {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 5px 2px 12px;
+            scrollbar-width: thin;
+        }
+
+        .quick-list a {
+            flex: 0 0 auto;
+            background: white;
+            color: var(--primary);
+            border: 1px solid var(--border);
+            padding: 10px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 800;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+            transition: 0.25s;
+        }
+
+        .quick-list a:hover {
+            background: var(--primary);
             color: white;
+            transform: translateY(-2px);
+        }
+
+        /* =========================================================
+           SERVICES
+           ========================================================= */
+
+        .services-section {
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 0 20px 45px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .category-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: 0 8px 28px rgba(12,57,105,0.07);
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 38px rgba(12,57,105,0.13);
+        }
+
+        .category-head {
+            padding: 20px 20px 15px;
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(to right, #ffffff, #f8fbff);
+        }
+
+        .category-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-light);
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .category-head h2 {
+            color: var(--dark);
+            font-size: 18px;
+            line-height: 1.25;
+        }
+
+        .category-head p {
+            color: var(--muted);
+            font-size: 12px;
+            margin-top: 2px;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 14px;
+        }
+
+        .service-list li {
+            margin-bottom: 8px;
+        }
+
+        .service-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .service-link {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            background: #f2f7fd;
+            color: #0757b8;
+            padding: 12px 13px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: 0.25s ease;
+            border: 1px solid transparent;
+        }
+
+        .service-link:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateX(4px);
+            border-color: var(--primary);
+        }
+
+        .service-link .service-icon {
+            width: 27px;
+            height: 27px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            border-radius: 7px;
+            font-size: 13px;
+            flex-shrink: 0;
+        }
+
+        .service-link .arrow {
+            margin-left: auto;
+            font-size: 16px;
+            opacity: 0.6;
+        }
+
+        /* =========================================================
+           NO RESULT
+           ========================================================= */
+
+        #noResult {
+            display: none;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            padding: 35px;
+            background: white;
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            margin-top: 20px;
         }
-        footer p {
-            margin: 5px 0;
+
+        #noResult h3 {
+            margin-bottom: 5px;
         }
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2em;
+
+        #noResult p {
+            color: var(--muted);
+        }
+
+        /* =========================================================
+           WHY CHOOSE US
+           ========================================================= */
+
+        .why-section {
+            background: white;
+            padding: 70px 20px;
+            margin-top: 20px;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .why-inner {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 35px;
+        }
+
+        .feature {
+            padding: 25px 18px;
+            text-align: center;
+            border-radius: 16px;
+            background: #f7faff;
+            border: 1px solid var(--border);
+            transition: 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            font-size: 17px;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+
+        .feature p {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        /* =========================================================
+           REVIEWS
+           ========================================================= */
+
+        .reviews-section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .review-summary {
+            max-width: 430px;
+            margin: 0 auto 30px;
+            text-align: center;
+            background: white;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            border-radius: 20px;
+            padding: 25px;
+        }
+
+        .review-number {
+            font-size: 42px;
+            color: var(--dark);
+            font-weight: 900;
+        }
+
+        .stars {
+            color: #ffb300;
+            font-size: 22px;
+            letter-spacing: 3px;
+        }
+
+        .review-summary p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .review-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 22px;
+            box-shadow: 0 7px 25px rgba(0,0,0,0.05);
+        }
+
+        .review-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .review-name {
+            font-weight: 900;
+            color: var(--dark);
+        }
+
+        .review-stars {
+            color: #ffb300;
+        }
+
+        .review-card p {
+            color: var(--muted);
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .google-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 30px;
+            background: var(--primary);
+            color: white;
+            padding: 13px 22px;
+            border-radius: 50px;
+            font-weight: 800;
+            transition: 0.3s;
+        }
+
+        .google-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* =========================================================
+           CONTACT / LOCATION
+           ========================================================= */
+
+        .contact-section {
+            background:
+                radial-gradient(circle at 10% 20%, rgba(0,200,255,0.12), transparent 28%),
+                linear-gradient(135deg, #071c34, #0b3158);
+            color: white;
+            padding: 70px 20px;
+        }
+
+        .contact-inner {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .contact-card {
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.10);
+            border-radius: 18px;
+            padding: 28px;
+        }
+
+        .contact-card h3 {
+            font-size: 20px;
+            margin-bottom: 14px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 13px;
+            margin: 15px 0;
+            color: rgba(255,255,255,0.88);
+        }
+
+        .contact-item span:first-child {
+            font-size: 20px;
+        }
+
+        .contact-item a {
+            color: white;
+            font-weight: 700;
+        }
+
+        .map-btn {
+            display: inline-flex;
+            margin-top: 12px;
+            padding: 12px 20px;
+            border-radius: 50px;
+            background: white;
+            color: var(--primary-dark);
+            font-weight: 900;
+        }
+
+        /* =========================================================
+           FOOTER
+           ========================================================= */
+
+        footer {
+            background: #03101e;
+            color: white;
+            padding: 40px 20px 85px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr;
+            gap: 35px;
+        }
+
+        .footer-brand h2 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .footer-brand p,
+        .footer-column a {
+            color: #aebdce;
+            font-size: 14px;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 12px;
+        }
+
+        .footer-column a {
+            display: block;
+            margin: 8px 0;
+        }
+
+        .footer-column a:hover {
+            color: white;
+        }
+
+        .copyright {
+            max-width: 1200px;
+            margin: 30px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.10);
+            text-align: center;
+            color: #8797a9;
+            font-size: 13px;
+        }
+
+        /* =========================================================
+           FLOATING BUTTONS
+           ========================================================= */
+
+        .floating-whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 25px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 10px 28px rgba(0,200,83,0.35);
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+        .back-top {
+            position: fixed;
+            right: 24px;
+            bottom: 98px;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--dark);
+            color: white;
+            border: 0;
+            cursor: pointer;
+            display: none;
+            z-index: 999;
+            font-size: 18px;
+        }
+
+        /* =========================================================
+           MOBILE BOTTOM BAR
+           ========================================================= */
+
+        .mobile-bottom {
+            display: none;
+        }
+
+        /* =========================================================
+           ANIMATION
+           ========================================================= */
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
+
+        .category-card {
+            animation: fadeUp 0.55s ease both;
+        }
+
+        /* =========================================================
+           RESPONSIVE
+           ========================================================= */
+
+        @media (max-width: 1000px) {
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .top-bar {
+                display: none;
+            }
+
+            .hero {
+                padding: 40px 16px 55px;
+            }
+
+            .hero h1 {
+                font-size: 2.35rem;
+            }
+
+            .hero-subtitle {
+                font-size: 15px;
+            }
+
+            .hero-address {
+                font-size: 13px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-btn {
+                width: 100%;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stat:nth-child(2) {
+                border-right: 0;
+            }
+
+            .stat:nth-child(-n+2) {
+                border-bottom: 1px solid var(--border);
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr;
+                gap: 22px;
+            }
+
+            .floating-whatsapp {
+                display: none;
+            }
+
+            .back-top {
+                right: 15px;
+                bottom: 75px;
+            }
+
+            .mobile-bottom {
+                display: grid;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                grid-template-columns: 1fr 1fr;
+                z-index: 2000;
+                box-shadow: 0 -5px 20px rgba(0,0,0,0.15);
+            }
+
+            .mobile-bottom a {
+                color: white;
+                text-align: center;
+                padding: 13px 10px;
+                font-weight: 900;
+                font-size: 14px;
+            }
+
+            .mobile-call {
+                background: var(--primary);
+            }
+
+            .mobile-wa {
+                background: var(--accent);
+            }
+
+            footer {
+                padding-bottom: 80px;
+            }
+        }
+
+        @media (max-width: 430px) {
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-wrapper {
+                margin-top: -20px;
+            }
+
+            .stat strong {
+                font-size: 20px;
+            }
+
+            .stat span {
+                font-size: 11px;
+            }
+
+            .category-head h2 {
+                font-size: 17px;
+            }
+
+            .service-link {
+                font-size: 13px;
+            }
+        }
+
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>SHIVANSH CYBER CAFE</h1>
-        <p>Rajeev Nagar, Main Road, Opposite Chappan Bhog, Near Nala Par, Patna, Bihar-800024</p>
-        <p class="contact-info">📞 Call/WhatsApp: <a href="tel:9304935726">9304935726</a>, <a href="tel:9315759010">9315759010</a></p>
-        <div class="timings">🕒 Open Daily: 7:00 AM - 9:00 PM</div>
-    </header>
+<!-- =========================================================
+     TOP BAR
+     ========================================================= -->
 
-    <div class="container">
-        <!-- Category 1 -->
-        <div class="category-card">
-            <h2>🏛️ Govt. IDs & Registrations</h2>
-            <ul class="service-list">
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Aadhar%20Print%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Aadhar Print</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Aadhar%20Seeding%20karwani%20hai" target="_blank">Aadhar Seeding</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Pan%20Card%20ka%20kaam%20hai" target="_blank">Pan Card Apply / Correction</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Voter%20Id%20Card%20ki%20service%20chahiye" target="_blank">Voter Id Card</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Driving%20Licence%20ka%20kaam%20hai" target="_blank">Driving Licence</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Ration%20Card%20ka%20kaam%20hai" target="_blank">Ration Card Apply</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Passport%20Apply%20karna%20hai" target="_blank">Passport Apply</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Udhyam%20Registration%20karna%20hai" target="_blank">Udhyam Registration</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20E-Shram%20Card%20banwana%20hai" target="_blank">E-Shram Card</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Ayushman%20Card%20banwana%20hai" target="_blank">Ayushman Card</a></li>
-            </ul>
+<div class="top-bar">
+    <div class="top-bar-inner">
+
+        <div class="top-left">
+            <span>📍 Rajeev Nagar, Patna</span>
+            <span>🕐 Open Daily: 7:00 AM - 9:00 PM</span>
         </div>
 
-        <!-- Category 2 -->
-        <div class="category-card">
-            <h2>📜 Certificates & RTPS</h2>
-            <ul class="service-list">
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Cast/Residence/Income%20certificate%20banwana%20hai" target="_blank">Cast/Residence/Income</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Tatkal%20RTPS%20certificate%20banwana%20hai" target="_blank">Tatkal RTPS Service</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20NCL/OBC/EWS%20certificate%20banwana%20hai" target="_blank">NCL/OBC/EWS</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Character%20Certificate%20banwana%20hai" target="_blank">Character Certificate</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Birth%20Certificate%20banwana%20hai" target="_blank">Birth Certificate</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Life%20Certificate%20banwana%20hai" target="_blank">Life Certificate</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Computer%20Certificate%20chahiye" target="_blank">Computer Certificate</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Gamka/Medical%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Gamka/Medical</a></li>
-            </ul>
+        <div class="top-right">
+            <a href="tel:9304935726">📞 9304935726</a>
+            <a href="tel:9315759010">📞 9315759010</a>
         </div>
 
-        <!-- Category 3 -->
-        <div class="category-card">
-            <h2>🗺️ Bihar Land Records</h2>
-            <ul class="service-list">
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Jamin%20Rashid%20katwana%20hai" target="_blank">Jamin Rashid (Bhu-Lagaan)</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Dakhil%20Kharij%20ya%20Mutation%20karwana%20hai" target="_blank">Dakhil Kharij (Mutation)</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20LPC%20banwana%20hai" target="_blank">LPC Certificate</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Jamin%20ka%20Parimarjan%20karwana%20hai" target="_blank">Parimarjan (Correction)</a></li>
-            </ul>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<header>
+
+    <div class="hero">
+
+        <div class="hero-badge">
+            🚀 Your Trusted Digital Service Partner in Patna
         </div>
 
-        <!-- Category 4 -->
-        <div class="category-card">
-            <h2>🌾 Agriculture & Yojana</h2>
-            <ul class="service-list">
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20PM%20Kisan%20ya%20DBT%20ka%20kaam%20hai" target="_blank">Kissan K.y.c / PM Kisan</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Diesel%20Anudan%20Yojana%20ka%20form%20bharna%20hai" target="_blank">Diesel Anudan Yojana</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Fasal%20Bima%20Yojana%20ka%20form%20bharna%20hai" target="_blank">Bihar Fasal Sahayata</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Vridhjan%20Pension%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Vridhjan Pension</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Elabharthi%20KYC%20karwana%20hai" target="_blank">Elabharthi KYC</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Mahila%20Rojgar%20Yojana%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Mahila Rojgar Yojana</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Berojgari%20Bhatta%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Berojgari Bhatta</a></li>
-            </ul>
+        <h1>
+            SHIVANSH <span>CYBER CAFE</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            All Digital Services Under One Roof
+        </p>
+
+        <p class="hero-address">
+            📍 Rajeev Nagar Main Road, Opposite Chappan Bhog,
+            Near Nala Par, Patna, Bihar - 800024
+        </p>
+
+        <div class="hero-actions">
+
+            <a
+                class="hero-btn btn-whatsapp"
+                href="https://wa.me/919304935726?text=Hello%20Shivansh%20Cyber%20Cafe,%20mujhe%20aapki%20service%20ke%20baare%20mein%20jaanna%20hai."
+                target="_blank"
+            >
+                💬 WhatsApp Now
+            </a>
+
+            <a
+                class="hero-btn btn-call"
+                href="tel:9304935726"
+            >
+                📞 Call Now
+            </a>
+
+            <a
+                class="hero-btn btn-services"
+                href="#services"
+            >
+                🔎 Explore Services
+            </a>
+
         </div>
 
-        <!-- Category 5 -->
-        <div class="category-card">
-            <h2>🎓 Students & Education</h2>
-            <ul class="service-list">
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Govt%20Job%20Vacancy%20ka%20Form%20bharna%20hai" target="_blank">Govt Job Forms (BPSC/BSSC)</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Bihar%20Board%20ka%20kaam%20hai" target="_blank">Bihar Board Forms</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Online%20Form%20bharna%20hai" target="_blank">General Online Forms</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Scholarship%20Form%20bharna%20hai" target="_blank">Scholarship Form</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Addmission%20Form%20bharna%20hai" target="_blank">Admission Form</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Examination%20Form%20bharna%20hai" target="_blank">Examination Form</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Bihar%20Student%20Credit%20Card%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Student Credit Card</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20ABC%20Id%20Card%20banwana%20hai" target="_blank">ABC Id Card</a></li>
-            </ul>
+        <div class="timing">
+            🕐 Open Daily: 7:00 AM - 9:00 PM
         </div>
 
-        <!-- Category 6 -->
-        <div class="category-card">
-            <h2>💰 Banking & Finance</h2>
-            <ul class="service-list">
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Money%20Transfer%20karna%20hai" target="_blank">Money Transfer</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Aeps%20service%20chahiye" target="_blank">AEPS</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20UPI%20Cash%20Withdrawal%20karna%20hai" target="_blank">UPI Cash Withdrawal</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20ATM%20Cash%20Withdrawal%20karna%20hai" target="_blank">ATM Cash Withdrawal</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20PF%20Withdrawal%20karna%20hai" target="_blank">PF Withdrawal</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20ITR%20Filling%20karwani%20hai" target="_blank">ITR Filling</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Nagar%20Nigam%20Property%20Tax%20bharna%20hai" target="_blank">Nagar Nigam Pro.Tax</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Challan%20Payment%20karna%20hai" target="_blank">Bike/Car Challan Payment</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20BBPS%20ya%20Bill%20Payment%20karna%20hai" target="_blank">BBPS (Bill Payments)</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Sahara%20Online%20ke%20baare%20mein%20jaanna%20hai" target="_blank">Sahara Online Refund</a></li>
-            </ul>
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     STATS
+     ========================================================= -->
+
+<div class="stats-wrapper">
+
+    <div class="stats">
+
+        <div class="stat">
+            <strong>50+</strong>
+            <span>Digital Services</span>
         </div>
 
-        <!-- Category 7 -->
-        <div class="category-card">
-            <h2>🖨️ Printing & Travel</h2>
-            <ul class="service-list">
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Photocopy/Print%20karwana%20hai" target="_blank">Photocopy/Print</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Scanning%20karwani%20hai" target="_blank">Scanning</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Lemination%20karwana%20hai" target="_blank">Lamination</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Passport%20Size%20Photo%20banwani%20hai" target="_blank">Passport Size Photo</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Family%20Photo%20banwani%20hai" target="_blank">Family Photo</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Ticket%20book%20karna%20hai" target="_blank">Train/Flight Ticket</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Bike/Car%20ka%20HSRP%20Number%20Plate%20book%20karna%20hai" target="_blank">HSRP Number Plate</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Trackon%20Courier%20ki%20service%20chahiye" target="_blank">Trackon Courier</a></li>
-            </ul>
+        <div class="stat">
+            <strong>24/7</strong>
+            <span>WhatsApp Enquiry</span>
         </div>
 
-        <!-- Category 8 -->
-        <div class="category-card">
-            <h2>💻 Tech Repair & Others</h2>
-            <ul class="service-list">
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Computer%20ya%20Laptop%20Repair%20karwana%20hai" target="_blank">Computer/Laptop Repair</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Mobile%20Repairing%20karwani%20hai" target="_blank">Mobile Repairing</a></li>
-                <li><a href="https://wa.me/919304935726?text=Hello,%20mujhe%20Window%20Installation%20karwana%20hai" target="_blank">Window Installation</a></li>
-            </ul>
+        <div class="stat">
+            <strong>Fast</strong>
+            <span>Service Assistance</span>
         </div>
-    
-        
-        <!-- Reviews Section -->
-        <div class="category-card" style="grid-column: 1 / -1; margin-top: 20px;">
-            <h2 style="text-align: center;">⭐ Our Google Business Reviews</h2>
-            <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 10px;">
 
-                <div style="flex: 0 0 300px; background: var(--secondary-color); padding: 15px; border-radius: 8px; border-left: 4px solid #4285F4;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                        <span style="font-weight: bold;">Local Guide</span>
-                        <span style="color: #ff9800; font-size: 1.2em;">⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <p style="font-style: italic; margin-bottom: 0;">"Best cyber cafe in Rajeev Nagar. All online forms and documentation work is done very fast and accurately. Highly recommended!"</p>
+        <div class="stat">
+            <strong>Patna</strong>
+            <span>Local Support</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     SEARCH
+     ========================================================= -->
+
+<section class="search-section">
+
+    <div class="section-heading">
+
+        <div class="small-title">
+            Find Your Service
+        </div>
+
+        <h2>
+            What service are you looking for?
+        </h2>
+
+    </div>
+
+    <div class="search-box">
+
+        <span class="search-icon">🔎</span>
+
+        <input
+            type="text"
+            id="serviceSearch"
+            placeholder="Search Aadhaar, PAN, PF, Driving Licence, Certificate..."
+            autocomplete="off"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK SERVICES
+     ========================================================= -->
+
+<section class="quick-section">
+
+    <div class="quick-list">
+
+        <a href="#services" data-search="Aadhar">
+            🪪 Aadhaar
+        </a>
+
+        <a href="#services" data-search="Pan">
+            💳 PAN Card
+        </a>
+
+        <a href="#services" data-search="Driving">
+            🚗 Driving Licence
+        </a>
+
+        <a href="#services" data-search="Certificate">
+            📜 Certificates
+        </a>
+
+        <a href="#services" data-search="PF">
+            💰 PF
+        </a>
+
+        <a href="#services" data-search="Form">
+            📝 Online Forms
+        </a>
+
+        <a href="#services" data-search="Ticket">
+            🎫 Ticket Booking
+        </a>
+
+        <a href="#services" data-search="Print">
+            🖨️ Printing
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+     ========================================================= -->
+
+<section class="services-section" id="services">
+
+    <div class="section-heading">
+
+        <div class="small-title">
+            Our Services
+        </div>
+
+        <h2>
+            Complete Digital Services
+        </h2>
+
+    </div>
+
+
+    <div class="services-grid" id="servicesGrid">
+
+
+        <!-- =====================================================
+             CATEGORY 1
+             ===================================================== -->
+
+        <div class="category-card">
+
+            <div class="category-head">
+
+                <div class="category-icon">
+                    🏛️
                 </div>
 
-                <div style="flex: 0 0 300px; background: var(--secondary-color); padding: 15px; border-radius: 8px; border-left: 4px solid #4285F4;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                        <span style="font-weight: bold;">Happy Customer</span>
-                        <span style="color: #ff9800; font-size: 1.2em;">⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <p style="font-style: italic; margin-bottom: 0;">"Bhaiya ka nature bahut acha hai aur yahan saara kaam time par ho jata hai. Print aur lamination ki quality bhi badhiya hai."</p>
-                </div>
-
-                <div style="flex: 0 0 300px; background: var(--secondary-color); padding: 15px; border-radius: 8px; border-left: 4px solid #4285F4;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                        <span style="font-weight: bold;">Student Review</span>
-                        <span style="color: #ff9800; font-size: 1.2em;">⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <p style="font-style: italic; margin-bottom: 0;">"Very helpful for students. Scholarship forms aur admit card download ke liye best place hai Patna me. Service is top class."</p>
+                <div>
+                    <h2>Govt. IDs & Registrations</h2>
+                    <p>Government identity & registration services</p>
                 </div>
 
             </div>
-            <p style="text-align: center; margin-top: 15px; font-weight: bold;">
-                <a href="https://g.page/r/CQX8MBvPwocrECk/review" target="_blank" style="color: #4285F4; text-decoration: underline;">Read all 380+ Google Reviews</a>
-            </p>
+
+            <ul class="service-list">
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Aadhar%20Print%20ke%20baare%20mein%20jaanna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🪪</span>
+                        <span>Aadhaar Print</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Aadhar%20Seeding%20karwani%20hai"
+                       target="_blank">
+                        <span class="service-icon">🪪</span>
+                        <span>Aadhaar Seeding</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Pan%20Card%20ka%20kaam%20hai"
+                       target="_blank">
+                        <span class="service-icon">💳</span>
+                        <span>PAN Card Apply / Correction</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Voter%20Id%20Card%20ki%20service%20chahiye"
+                       target="_blank">
+                        <span class="service-icon">🗳️</span>
+                        <span>Voter ID Card</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Driving%20Licence%20ka%20kaam%20hai"
+                       target="_blank">
+                        <span class="service-icon">🚗</span>
+                        <span>Driving Licence</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Ration%20Card%20ka%20kaam%20hai"
+                       target="_blank">
+                        <span class="service-icon">🛒</span>
+                        <span>Ration Card Apply</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Passport%20Apply%20karna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🛂</span>
+                        <span>Passport Apply</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Udhyam%20Registration%20karna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🏢</span>
+                        <span>Udyam Registration</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20E-Shram%20Card%20banwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">👷</span>
+                        <span>E-Shram Card</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Ayushman%20Card%20banwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">🏥</span>
+                        <span>Ayushman Card</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
-    </div> <!-- Close container -->
 
 
-    <footer>
-        <p>&copy; 2026 Shivansh Cyber Cafe. All Rights Reserved.</p>
-        <p>Your Trusted Digital Partner in Patna</p>
-    </footer>
+        <!-- =====================================================
+             CATEGORY 2
+             ===================================================== -->
+
+        <div class="category-card">
+
+            <div class="category-head">
+
+                <div class="category-icon">
+                    📜
+                </div>
+
+                <div>
+                    <h2>Certificates & RTPS</h2>
+                    <p>Certificates and RTPS related services</p>
+                </div>
+
+            </div>
+
+            <ul class="service-list">
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Cast/Residence/Income%20certificate%20banwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">📜</span>
+                        <span>Caste / Residence / Income</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Tatkal%20RTPS%20certificate%20banwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">⚡</span>
+                        <span>Tatkal RTPS Service</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20NCL/OBC/EWS%20certificate%20banwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">📋</span>
+                        <span>NCL / OBC / EWS</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Character%20Certificate%20banwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">📄</span>
+                        <span>Character Certificate</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Birth%20Certificate%20banwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">👶</span>
+                        <span>Birth Certificate</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Life%20Certificate%20banwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">❤️</span>
+                        <span>Life Certificate</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Computer%20Certificate%20chahiye"
+                       target="_blank">
+                        <span class="service-icon">💻</span>
+                        <span>Computer Certificate</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Gamka/Medical%20ke%20baare%20mein%20jaanna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🏥</span>
+                        <span>Gamka / Medical</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =====================================================
+             CATEGORY 3
+             ===================================================== -->
+
+        <div class="category-card">
+
+            <div class="category-head">
+
+                <div class="category-icon">
+                    🗺️
+                </div>
+
+                <div>
+                    <h2>Bihar Land Records</h2>
+                    <p>Land record and mutation services</p>
+                </div>
+
+            </div>
+
+            <ul class="service-list">
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Jamin%20Rashid%20katwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">🏠</span>
+                        <span>Jamin Rashid (Bhu-Lagaan)</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Dakhil%20Kharij%20ya%20Mutation%20karwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">📑</span>
+                        <span>Dakhil Kharij (Mutation)</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20LPC%20banwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">📜</span>
+                        <span>LPC Certificate</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Jamin%20ka%20Parimarjan%20karwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">✏️</span>
+                        <span>Parimarjan (Correction)</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =====================================================
+             CATEGORY 4
+             ===================================================== -->
+
+        <div class="category-card">
+
+            <div class="category-head">
+
+                <div class="category-icon">
+                    🌾
+                </div>
+
+                <div>
+                    <h2>Agriculture & Yojana</h2>
+                    <p>Government schemes and agriculture services</p>
+                </div>
+
+            </div>
+
+            <ul class="service-list">
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20PM%20Kisan%20ya%20DBT%20ka%20kaam%20hai"
+                       target="_blank">
+                        <span class="service-icon">🌾</span>
+                        <span>Kisan KYC / PM Kisan</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Diesel%20Anudan%20Yojana%20ka%20form%20bharna%20hai"
+                       target="_blank">
+                        <span class="service-icon">⛽</span>
+                        <span>Diesel Anudan Yojana</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Fasal%20Bima%20Yojana%20ka%20form%20bharna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🌱</span>
+                        <span>Bihar Fasal Sahayata</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Vridhjan%20Pension%20ke%20baare%20mein%20jaanna%20hai"
+                       target="_blank">
+                        <span class="service-icon">👴</span>
+                        <span>Vridhjan Pension</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Elabharthi%20KYC%20karwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">📱</span>
+                        <span>Elabharthi KYC</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Mahila%20Rojgar%20Yojana%20ke%20baare%20mein%20jaanna%20hai"
+                       target="_blank">
+                        <span class="service-icon">👩</span>
+                        <span>Mahila Rojgar Yojana</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Berojgari%20Bhatta%20ke%20baare%20mein%20jaanna%20hai"
+                       target="_blank">
+                        <span class="service-icon">💼</span>
+                        <span>Berojgari Bhatta</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =====================================================
+             CATEGORY 5
+             ===================================================== -->
+
+        <div class="category-card">
+
+            <div class="category-head">
+
+                <div class="category-icon">
+                    🎓
+                </div>
+
+                <div>
+                    <h2>Students & Education</h2>
+                    <p>Forms, admissions, scholarships and exams</p>
+                </div>
+
+            </div>
+
+            <ul class="service-list">
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Govt%20Job%20Vacancy%20ka%20Form%20bharna%20hai"
+                       target="_blank">
+                        <span class="service-icon">💼</span>
+                        <span>Govt Job Forms (BPSC/BSSC)</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Bihar%20Board%20ka%20kaam%20hai"
+                       target="_blank">
+                        <span class="service-icon">📚</span>
+                        <span>Bihar Board Forms</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Online%20Form%20bharna%20hai"
+                       target="_blank">
+                        <span class="service-icon">📝</span>
+                        <span>General Online Forms</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Scholarship%20Form%20bharna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🎓</span>
+                        <span>Scholarship Form</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Admission%20Form%20bharna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🏫</span>
+                        <span>Admission Form</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Examination%20Form%20bharna%20hai"
+                       target="_blank">
+                        <span class="service-icon">📋</span>
+                        <span>Examination Form</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Bihar%20Student%20Credit%20Card%20ke%20baare%20mein%20jaanna%20hai"
+                       target="_blank">
+                        <span class="service-icon">💳</span>
+                        <span>Student Credit Card</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20ABC%20Id%20Card%20banwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">🆔</span>
+                        <span>ABC ID Card</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =====================================================
+             CATEGORY 6
+             ===================================================== -->
+
+        <div class="category-card">
+
+            <div class="category-head">
+
+                <div class="category-icon">
+                    💰
+                </div>
+
+                <div>
+                    <h2>Banking & Finance</h2>
+                    <p>Digital payment and financial services</p>
+                </div>
+
+            </div>
+
+            <ul class="service-list">
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Money%20Transfer%20karna%20hai"
+                       target="_blank">
+                        <span class="service-icon">💸</span>
+                        <span>Money Transfer</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Aeps%20service%20chahiye"
+                       target="_blank">
+                        <span class="service-icon">🏦</span>
+                        <span>AEPS</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20UPI%20Cash%20Withdrawal%20karna%20hai"
+                       target="_blank">
+                        <span class="service-icon">💵</span>
+                        <span>UPI Cash Withdrawal</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20ATM%20Cash%20Withdrawal%20karna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🏧</span>
+                        <span>ATM Cash Withdrawal</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20PF%20Withdrawal%20karna%20hai"
+                       target="_blank">
+                        <span class="service-icon">💰</span>
+                        <span>PF Withdrawal</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20ITR%20Filling%20karwani%20hai"
+                       target="_blank">
+                        <span class="service-icon">🧾</span>
+                        <span>ITR Filing</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Nagar%20Nigam%20Property%20Tax%20bharna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🏠</span>
+                        <span>Nagar Nigam Property Tax</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Challan%20Payment%20karna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🚘</span>
+                        <span>Bike/Car Challan Payment</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20BBPS%20ya%20Bill%20Payment%20karna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🧾</span>
+                        <span>BBPS / Bill Payments</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Sahara%20Online%20Refund%20ke%20baare%20mein%20jaanna%20hai"
+                       target="_blank">
+                        <span class="service-icon">💰</span>
+                        <span>Sahara Online Refund</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =====================================================
+             CATEGORY 7
+             ===================================================== -->
+
+        <div class="category-card">
+
+            <div class="category-head">
+
+                <div class="category-icon">
+                    🖨️
+                </div>
+
+                <div>
+                    <h2>Printing & Travel</h2>
+                    <p>Printing, photo, scanning and ticket services</p>
+                </div>
+
+            </div>
+
+            <ul class="service-list">
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Photocopy/Print%20karwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">🖨️</span>
+                        <span>Photocopy / Print</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Scanning%20karwani%20hai"
+                       target="_blank">
+                        <span class="service-icon">📄</span>
+                        <span>Scanning</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Lamination%20karwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">📑</span>
+                        <span>Lamination</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Passport%20Size%20Photo%20banwani%20hai"
+                       target="_blank">
+                        <span class="service-icon">📸</span>
+                        <span>Passport Size Photo</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Family%20Photo%20banwani%20hai"
+                       target="_blank">
+                        <span class="service-icon">👨‍👩‍👧</span>
+                        <span>Family Photo</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Train/Flight%20Ticket%20book%20karna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🎫</span>
+                        <span>Train / Flight Ticket</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Bike/Car%20ka%20HSRP%20Number%20Plate%20book%20karna%20hai"
+                       target="_blank">
+                        <span class="service-icon">🚗</span>
+                        <span>HSRP Number Plate</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Trackon%20Courier%20ki%20service%20chahiye"
+                       target="_blank">
+                        <span class="service-icon">📦</span>
+                        <span>Trackon Courier</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =====================================================
+             CATEGORY 8
+             ===================================================== -->
+
+        <div class="category-card">
+
+            <div class="category-head">
+
+                <div class="category-icon">
+                    💻
+                </div>
+
+                <div>
+                    <h2>Tech Repair & Others</h2>
+                    <p>Computer, laptop and mobile assistance</p>
+                </div>
+
+            </div>
+
+            <ul class="service-list">
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Computer%20ya%20Laptop%20Repair%20karwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">💻</span>
+                        <span>Computer / Laptop Repair</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Mobile%20Repairing%20karwani%20hai"
+                       target="_blank">
+                        <span class="service-icon">📱</span>
+                        <span>Mobile Repairing</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="service-link"
+                       href="https://wa.me/919304935726?text=Hello,%20mujhe%20Windows%20Installation%20karwana%20hai"
+                       target="_blank">
+                        <span class="service-icon">🪟</span>
+                        <span>Windows Installation</span>
+                        <span class="arrow">›</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- NO SEARCH RESULT -->
+
+    <div id="noResult">
+
+        <div style="font-size:42px;">🔎</div>
+
+        <h3>
+            Service Not Found
+        </h3>
+
+        <p>
+            Is service ke liye WhatsApp par directly enquiry karein.
+        </p>
+
+        <a
+            href="https://wa.me/919304935726?text=Hello,%20mujhe%20ek%20service%20ke%20baare%20mein%20jaanna%20hai."
+            target="_blank"
+            class="google-btn"
+        >
+            💬 Ask on WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY CHOOSE US
+     ========================================================= -->
+
+<section class="why-section">
+
+    <div class="why-inner">
+
+        <div class="section-heading">
+
+            <div class="small-title">
+                Why Shivansh Cyber Cafe
+            </div>
+
+            <h2>
+                Your Trusted Digital Partner
+            </h2>
+
+        </div>
+
+
+        <div class="features-grid">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ⚡
+                </div>
+
+                <h3>Fast Service</h3>
+
+                <p>
+                    Online work aur documentation assistance ke liye quick support.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🔒
+                </div>
+
+                <h3>Secure Documents</h3>
+
+                <p>
+                    Customer documents ko responsibly handle karne par focus.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    📱
+                </div>
+
+                <h3>WhatsApp Support</h3>
+
+                <p>
+                    Service ke baare mein ghar se WhatsApp par enquiry karein.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🏪
+                </div>
+
+                <h3>Local Support</h3>
+
+                <p>
+                    Rajeev Nagar, Patna mein convenient local digital assistance.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     REVIEWS
+     ========================================================= -->
+
+<section class="reviews-section" id="reviews">
+
+    <div class="section-heading">
+
+        <div class="small-title">
+            Customer Feedback
+        </div>
+
+        <h2>
+            What Customers Say
+        </h2>
+
+    </div>
+
+
+    <div class="review-summary">
+
+        <div class="review-number">
+            4.9
+        </div>
+
+        <div class="stars">
+            ★★★★★
+        </div>
+
+        <p>
+            Google Business Rating
+        </p>
+
+    </div>
+
+
+    <div class="reviews-grid">
+
+        <div class="review-card">
+
+            <div class="review-top">
+
+                <span class="review-name">
+                    Local Guide
+                </span>
+
+                <span class="review-stars">
+                    ★★★★★
+                </span>
+
+            </div>
+
+            <p>
+                "Best cyber cafe in Rajeev Nagar. All online forms and
+                documentation work is done very fast and accurately.
+                Highly recommended!"
+            </p>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-top">
+
+                <span class="review-name">
+                    Happy Customer
+                </span>
+
+                <span class="review-stars">
+                    ★★★★★
+                </span>
+
+            </div>
+
+            <p>
+                "Bhaiya ka nature bahut acha hai aur yahan saara kaam
+                time par ho jata hai. Print aur lamination ki quality bhi badhiya hai."
+            </p>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="review-top">
+
+                <span class="review-name">
+                    Student Review
+                </span>
+
+                <span class="review-stars">
+                    ★★★★★
+                </span>
+
+            </div>
+
+            <p>
+                "Very helpful for students. Scholarship forms aur admit
+                card download ke liye best place hai Patna me."
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div style="text-align:center;">
+
+        <a
+            class="google-btn"
+            href="https://g.page/r/CQX8MBvPwocrECk/review"
+            target="_blank"
+        >
+            ⭐ View Google Reviews
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT SECTION
+     ========================================================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-inner">
+
+        <div class="section-heading">
+
+            <div
+                class="small-title"
+                style="color:#72d5ff;"
+            >
+                Contact Us
+            </div>
+
+            <h2 style="color:white;">
+                Need Any Digital Service?
+            </h2>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-card">
+
+                <h3>
+                    📍 Visit Our Shop
+                </h3>
+
+                <div class="contact-item">
+
+                    <span>📍</span>
+
+                    <span>
+                        Shivansh Cyber Cafe<br>
+                        Rajeev Nagar Main Road<br>
+                        Opposite Chappan Bhog, Near Nala<br>
+                        Patna, Bihar - 800024
+                    </span>
+
+                </div>
+
+                <a
+                    class="map-btn"
+                    href="https://www.google.com/maps/search/?api=1&query=Shivansh%20Cyber%20Cafe%20Rajeev%20Nagar%20Patna"
+                    target="_blank"
+                >
+                    🗺️ Get Directions
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    📞 Call / WhatsApp
+                </h3>
+
+                <div class="contact-item">
+
+                    <span>📱</span>
+
+                    <span>
+                        <a href="tel:9304935726">
+                            9304935726
+                        </a>
+                        <br>
+
+                        <a href="tel:9315759010">
+                            9315759010
+                        </a>
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>🕐</span>
+
+                    <span>
+                        Open Daily<br>
+                        <strong>
+                            7:00 AM - 9:00 PM
+                        </strong>
+                    </span>
+
+                </div>
+
+
+                <a
+                    class="map-btn"
+                    style="background:#00c853;color:white;"
+                    href="https://wa.me/919304935726?text=Hello%20Shivansh%20Cyber%20Cafe,%20mujhe%20aapki%20service%20ke%20baare%20mein%20jaanna%20hai."
+                    target="_blank"
+                >
+                    💬 WhatsApp Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+
+        <div class="footer-brand">
+
+            <h2>
+                SHIVANSH CYBER CAFE
+            </h2>
+
+            <p>
+                Your Trusted Digital Service Partner in Patna.
+                Online forms, government services, certificates,
+                printing, travel and digital assistance.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="#services">
+                Our Services
+            </a>
+
+            <a href="#reviews">
+                Customer Reviews
+            </a>
+
+            <a href="#contact">
+                Contact Us
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Contact
+            </h3>
+
+            <a href="tel:9304935726">
+                📞 9304935726
+            </a>
+
+            <a href="tel:9315759010">
+                📞 9315759010
+            </a>
+
+            <a href="https://wa.me/919304935726" target="_blank">
+                💬 WhatsApp
+            </a>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Shivansh%20Cyber%20Cafe%20Rajeev%20Nagar%20Patna" target="_blank">
+                📍 Get Directions
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Shivansh Cyber Cafe. All Rights Reserved.
+        <br>
+        Rajeev Nagar, Patna, Bihar - 800024
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     FLOATING WHATSAPP
+     ========================================================= -->
+
+<a
+    class="floating-whatsapp"
+    href="https://wa.me/919304935726?text=Hello%20Shivansh%20Cyber%20Cafe,%20mujhe%20aapki%20service%20ke%20baare%20mein%20jaanna%20hai."
+    target="_blank"
+    aria-label="WhatsApp"
+>
+    💬
+</a>
+
+
+<!-- =========================================================
+     BACK TO TOP
+     ========================================================= -->
+
+<button
+    class="back-top"
+    id="backTop"
+    onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    aria-label="Back to top"
+>
+    ↑
+</button>
+
+
+<!-- =========================================================
+     MOBILE BOTTOM BAR
+     ========================================================= -->
+
+<div class="mobile-bottom">
+
+    <a
+        href="tel:9304935726"
+        class="mobile-call"
+    >
+        📞 Call Now
+    </a>
+
+    <a
+        href="https://wa.me/919304935726?text=Hello%20Shivansh%20Cyber%20Cafe,%20mujhe%20aapki%20service%20ke%20baare%20mein%20jaanna%20hai."
+        target="_blank"
+        class="mobile-wa"
+    >
+        💬 WhatsApp
+    </a>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script>
+
+    /* =========================================================
+       SERVICE SEARCH
+       ========================================================= */
+
+    const searchInput = document.getElementById("serviceSearch");
+    const cards = document.querySelectorAll(".category-card");
+    const noResult = document.getElementById("noResult");
+
+    searchInput.addEventListener("input", function () {
+
+        const searchValue = this.value.toLowerCase().trim();
+
+        let visibleCards = 0;
+
+        cards.forEach(function(card) {
+
+            const cardText = card.innerText.toLowerCase();
+
+            if (cardText.includes(searchValue)) {
+
+                card.style.display = "";
+
+                visibleCards++;
+
+            } else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+        if (searchValue !== "" && visibleCards === 0) {
+
+            noResult.style.display = "block";
+
+        } else {
+
+            noResult.style.display = "none";
+
+        }
+
+    });
+
+
+    /* =========================================================
+       QUICK SEARCH BUTTONS
+       ========================================================= */
+
+    const quickButtons = document.querySelectorAll("[data-search]");
+
+    quickButtons.forEach(function(button) {
+
+        button.addEventListener("click", function() {
+
+            const value = this.getAttribute("data-search");
+
+            searchInput.value = value;
+
+            searchInput.dispatchEvent(new Event("input"));
+
+        });
+
+    });
+
+
+    /* =========================================================
+       BACK TO TOP
+       ========================================================= */
+
+    const backTop = document.getElementById("backTop");
+
+    window.addEventListener("scroll", function() {
+
+        if (window.scrollY > 500) {
+
+            backTop.style.display = "block";
+
+        } else {
+
+            backTop.style.display = "none";
+
+        }
+
+    });
+
+
+    /* =========================================================
+       SERVICE LINK ANALYTICS-LIKE CLICK EFFECT
+       ========================================================= */
+
+    document.querySelectorAll(".service-link").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            this.style.transform = "scale(0.98)";
+
+            setTimeout(() => {
+
+                this.style.transform = "";
+
+            }, 150);
+
+        });
+
+    });
+
+
+    /* =========================================================
+       SIMPLE FADE-IN ON SCROLL
+       ========================================================= */
+
+    const observer = new IntersectionObserver(
+
+        function(entries) {
+
+            entries.forEach(function(entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.08
+        }
+
+    );
+
+
+    document.querySelectorAll(
+        ".feature, .review-card, .contact-card"
+    ).forEach(function(element) {
+
+        element.style.opacity = "0";
+        element.style.transform = "translateY(15px)";
+        element.style.transition = "all 0.6s ease";
+
+        observer.observe(element);
+
+    });
+
+
+    /* =========================================================
+       CONSOLE
+       ========================================================= */
+
+    console.log(
+        "Shivansh Cyber Cafe Website Loaded Successfully."
+    );
+
+</script>
+
 
 </body>
 </html>
