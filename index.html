@@ -1,4 +1,30 @@
-<!DOCTYPE html>
+
+            background: white;
+            color: var(--primary-dark);
+            font-weight: 900;
+        }
+
+        /* =========================================================
+           FOOTER
+           ========================================================= */
+
+        footer {
+            background: #03101e;
+            color: white;
+            padding: 40px 20px 85px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr;
+            gap: 35px;
+        }
+
+        .footer-brand h2 {
+            font-size: 24px;
+            margin-bottom: 8px;<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -491,6 +517,149 @@
             opacity: 0.6;
         }
 
+
+
+        /* =========================================================
+           SHOP PHOTO GALLERY
+           ========================================================= */
+
+        .shop-gallery-section {
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 55px 20px 35px;
+        }
+
+        .shop-gallery-wrap {
+            background: linear-gradient(145deg, #ffffff, #f5f9ff);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 18px;
+            box-shadow: var(--shadow);
+        }
+
+        .shop-gallery-grid {
+            display: grid;
+            grid-template-columns: 1.35fr 1fr;
+            gap: 16px;
+        }
+
+        .shop-photo {
+            position: relative;
+            overflow: hidden;
+            border-radius: 18px;
+            background: #dfe8f2;
+            min-height: 300px;
+            cursor: zoom-in;
+            border: 1px solid rgba(7,87,184,0.10);
+        }
+
+        .shop-photo.tall {
+            min-height: 420px;
+        }
+
+        .shop-photo img {
+            width: 100%;
+            height: 100%;
+            min-height: inherit;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.55s ease, filter 0.55s ease;
+        }
+
+        .shop-photo:hover img {
+            transform: scale(1.045);
+            filter: brightness(1.04);
+        }
+
+        .shop-photo-overlay {
+            position: absolute;
+            left: 16px;
+            right: 16px;
+            bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 11px 14px;
+            border-radius: 13px;
+            color: white;
+            background: rgba(3, 16, 30, 0.76);
+            backdrop-filter: blur(10px);
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .shop-photo-overlay span:last-child {
+            opacity: 0.82;
+            font-size: 12px;
+        }
+
+        .gallery-note {
+            text-align: center;
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 13px;
+        }
+
+        /* =========================================================
+           PHOTO LIGHTBOX
+           ========================================================= */
+
+        .photo-lightbox {
+            position: fixed;
+            inset: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background: rgba(2, 10, 20, 0.90);
+            backdrop-filter: blur(8px);
+            z-index: 5000;
+        }
+
+        .photo-lightbox.open {
+            display: flex;
+        }
+
+        .photo-lightbox img {
+            max-width: min(1200px, 94vw);
+            max-height: 88vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 16px;
+            box-shadow: 0 25px 70px rgba(0,0,0,0.45);
+        }
+
+        .lightbox-close {
+            position: fixed;
+            top: 18px;
+            right: 20px;
+            width: 46px;
+            height: 46px;
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 50%;
+            background: rgba(255,255,255,0.12);
+            color: white;
+            font-size: 27px;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        .lightbox-caption {
+            position: fixed;
+            left: 50%;
+            bottom: 18px;
+            transform: translateX(-50%);
+            color: white;
+            background: rgba(3,16,30,0.72);
+            padding: 8px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
         /* =========================================================
            NO RESULT
            ========================================================= */
@@ -718,32 +887,6 @@
             margin-top: 12px;
             padding: 12px 20px;
             border-radius: 50px;
-            background: white;
-            color: var(--primary-dark);
-            font-weight: 900;
-        }
-
-        /* =========================================================
-           FOOTER
-           ========================================================= */
-
-        footer {
-            background: #03101e;
-            color: white;
-            padding: 40px 20px 85px;
-        }
-
-        .footer-inner {
-            max-width: 1200px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: 1.3fr 1fr 1fr;
-            gap: 35px;
-        }
-
-        .footer-brand h2 {
-            font-size: 24px;
-            margin-bottom: 8px;
         }
 
         .footer-brand p,
@@ -848,7 +991,18 @@
            RESPONSIVE
            ========================================================= */
 
+
         @media (max-width: 1000px) {
+
+            .shop-gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .shop-photo,
+            .shop-photo.tall {
+                min-height: 330px;
+            }
+
 
             .services-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -868,6 +1022,29 @@
         }
 
         @media (max-width: 700px) {
+
+            .shop-gallery-section {
+                padding: 40px 16px 25px;
+            }
+
+            .shop-gallery-wrap {
+                padding: 10px;
+                border-radius: 18px;
+            }
+
+            .shop-photo,
+            .shop-photo.tall {
+                min-height: 240px;
+            }
+
+            .shop-photo-overlay {
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                padding: 9px 11px;
+                font-size: 12px;
+            }
+
 
             .top-bar {
                 display: none;
@@ -1074,6 +1251,13 @@
                 🔎 Explore Services
             </a>
 
+            <a
+                class="hero-btn btn-services"
+                href="#shop-gallery"
+            >
+                📸 View Shop Photos
+            </a>
+
         </div>
 
         <div class="timing">
@@ -1116,6 +1300,56 @@
     </div>
 
 </div>
+
+
+
+
+<!-- =========================================================
+     SHOP PHOTO GALLERY
+     ========================================================= -->
+
+<section class="shop-gallery-section" id="shop-gallery">
+
+    <div class="section-heading">
+        <div class="small-title">Visit Our Shop</div>
+        <h2>Our Shop, Your Trusted Digital Partner</h2>
+    </div>
+
+    <div class="shop-gallery-wrap">
+        <div class="shop-gallery-grid">
+
+            <div class="shop-photo tall" data-photo="shop-photo-1.webp" data-caption="Shivansh Cyber Cafe - Shop Interior">
+                <img
+                    src="shop-photo-1.webp"
+                    alt="Shivansh Cyber Cafe professional shop interior"
+                    loading="lazy"
+                >
+                <div class="shop-photo-overlay">
+                    <span>🏪 Shivansh Cyber Cafe</span>
+                    <span>Tap to view</span>
+                </div>
+            </div>
+
+            <div class="shop-photo" data-photo="shop-photo-2.webp" data-caption="Shivansh Cyber Cafe - Service Area">
+                <img
+                    src="shop-photo-2.webp"
+                    alt="Shivansh Cyber Cafe service area and display"
+                    loading="lazy"
+                >
+                <div class="shop-photo-overlay">
+                    <span>✨ Professional Setup</span>
+                    <span>Tap to view</span>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="gallery-note">
+            📸 Real photos of our shop • Visit us at Rajeev Nagar Main Road, Patna
+        </p>
+    </div>
+
+</section>
 
 
 <!-- =========================================================
@@ -2443,6 +2677,18 @@
 </footer>
 
 
+
+
+<!-- =========================================================
+     PHOTO LIGHTBOX
+     ========================================================= -->
+
+<div class="photo-lightbox" id="photoLightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">×</button>
+    <img id="lightboxImage" src="" alt="Shop photo preview">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
 <!-- =========================================================
      FLOATING WHATSAPP
      ========================================================= -->
@@ -2650,6 +2896,49 @@
     });
 
 
+
+
+    /* =========================================================
+       SHOP PHOTO LIGHTBOX
+       ========================================================= */
+
+    const lightbox = document.getElementById("photoLightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxCaption = document.getElementById("lightboxCaption");
+    const lightboxClose = document.getElementById("lightboxClose");
+
+    document.querySelectorAll(".shop-photo").forEach(function(photo) {
+        photo.addEventListener("click", function() {
+            lightboxImage.src = this.getAttribute("data-photo");
+            lightboxImage.alt = this.getAttribute("data-caption");
+            lightboxCaption.textContent = this.getAttribute("data-caption");
+            lightbox.classList.add("open");
+            document.body.style.overflow = "hidden";
+        });
+    });
+
+    function closeLightbox() {
+        lightbox.classList.remove("open");
+        document.body.style.overflow = "";
+        setTimeout(function() {
+            lightboxImage.src = "";
+        }, 200);
+    }
+
+    lightboxClose.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", function(event) {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape" && lightbox.classList.contains("open")) {
+            closeLightbox();
+        }
+    });
+
     /* =========================================================
        CONSOLE
        ========================================================= */
@@ -2659,7 +2948,3 @@
     );
 
 </script>
-
-
-</body>
-</html>
